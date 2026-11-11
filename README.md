@@ -49,3 +49,11 @@ This is a working starter platform, not an exhaustive scholarly database. Script
 - Add richer original-language and variant comparison views.
 - Add optional user accounts/cloud sync.
 - AI assistant remains deferred until a future version.
+
+## Version 1.1 content expansion (November 2026)
+
+Expanded from 12 to 49 curated studies spanning systematic theology, apologetics, biblical exegesis, historical theology, and textual criticism. Expanded scripted apologetics scenarios from 3 to 8. The study search now includes section body text as well as titles, passages, and tags. Existing local browser notes and bookmarks remain compatible because original study IDs are unchanged.
+
+**Research limitation:** This is a guided educational library, not a full scholarly apparatus or licensed Bible text database. Citations are research leads; verify manuscript claims against current critical editions and facsimiles. No AI functionality is included.
+
+**Build validation:** TypeScript content-file validation completed; a full Vite production build requires installing dependencies using `npm install` and then running `npm run build` in an environment with npm registry access.
