@@ -27,3 +27,9 @@ React + TypeScript + Vite application for Netlify. Includes the existing Veritas
 
 ## Veritas 1.6 — rights-aware historic research library
 Adds Public-Domain Library with edition-level reuse status, seven vetted source/index entries, and four original doctrinal study guides with Scripture and 1689 references. Source links are external; no third-party full text is bundled. The two Project Gutenberg editions have an explicit U.S. public-domain notice. Before importing additional texts, confirm the exact edition and any site-specific conditions. Personal notes remain in localStorage.
+
+## Version 1.7 — Expanded apologetics simulator
+Added 36 original multiple-choice scenarios across atheism, Islam, Christian traditions, textual criticism, morality, Reformed theology, and evangelism. All questions are original, scripted, and require no AI or external documents.
+
+## Veritas 1.8 — Evil & Theodicy
+16 original multiple-choice scenarios added, informed by Cornelius Van Til’s *Evil and Theodicy* (1923), with Scripture and 1689 references. No source PDF text is bundled. The source document remains in the user’s private Google Drive.
