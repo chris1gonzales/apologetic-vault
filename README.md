@@ -1,59 +1,20 @@
-# Veritas 1.0 — Theology & Apologetics
+# Veritas 1.4 — Private Research Workspace
 
-A non-AI, responsive React + TypeScript + Vite application with seven research modules, curated starter content, a Scripture Research Workspace, scripted apologetics exercises, local notes/bookmarks, and JSON research backup.
+React + TypeScript + Vite application for Netlify. Includes the existing Veritas studies, confessions, scripted apologetics simulator, Google Drive source catalog, source-note search, folder navigation, research notes, backups, and a privacy/deployment guide.
 
-## Start locally
+## Deploy
 
-Install Node.js 20.19+ (or 22.12+) and run:
+1. Run `npm install` and `npm run build` locally.
+2. Push this repository to GitHub.
+3. Connect the repository to Netlify. Build command: `npm run build`; publish directory: `dist`.
+4. In Netlify's site settings, enable supported visitor/site-level access protection if available on your plan. **The app does not itself implement login.** If unavailable, choose a supported external access-control product before treating the site as private.
+5. Leave Google Drive source files private. Do not change sharing permissions to public.
 
-```bash
-npm install
-npm run dev
-```
+## Data and limitations
 
-Open the local URL shown by Vite.
-
-## Production build
-
-```bash
-npm run build
-npm run preview
-```
-
-## Deploy on Netlify
-
-1. Create a GitHub repository and upload the contents of this folder (not just the ZIP).
-2. In Netlify, choose **Add new project → Import an existing project** and connect the repository.
-3. Build command: `npm run build`. Publish directory: `dist`.
-4. Deploy. The included `netlify.toml` configures SPA fallback routing.
-
-No API keys, Supabase account, or AI subscription are needed.
-
-## Features
-
-- Seven modules: Systematic Theology, Apologetics, Exegesis, Historical Theology, Textual Criticism, Scripted Simulator, Research Library.
-- Searchable curated study articles with references and methodological cautions.
-- Scripture Workspace linking selected passages to indexed studies by discipline.
-- Scripted debate simulator with feedback (no AI).
-- Bookmarks and notes stored in browser localStorage; export/import JSON backups.
-- Links to external primary-source and scholarly resources.
-
-## Limitations / editorial policy
-
-This is a working starter platform, not an exhaustive scholarly database. Scripture Workspace links by curated references, not full verse-level indexing. Manuscript evidence summaries are introductory and should be checked against a current critical apparatus. No copyrighted Bible translation, manuscript transcription, or scholarly apparatus is bundled. External scholarly links may change or require access. Local browser storage does not synchronize across devices and may be erased. No user accounts or AI integration are present.
-
-## Roadmap
-
-- Expand reviewed studies and verse-level cross-reference metadata.
-- Add public-domain/licensed Bible text and manuscript catalog with provenance.
-- Add richer original-language and variant comparison views.
-- Add optional user accounts/cloud sync.
-- AI assistant remains deferred until a future version.
-
-## Version 1.1 content expansion (November 2026)
-
-Expanded from 12 to 49 curated studies spanning systematic theology, apologetics, biblical exegesis, historical theology, and textual criticism. Expanded scripted apologetics scenarios from 3 to 8. The study search now includes section body text as well as titles, passages, and tags. Existing local browser notes and bookmarks remain compatible because original study IDs are unchanged.
-
-**Research limitation:** This is a guided educational library, not a full scholarly apparatus or licensed Bible text database. Citations are research leads; verify manuscript claims against current critical editions and facsimiles. No AI functionality is included.
-
-**Build validation:** TypeScript content-file validation completed; a full Vite production build requires installing dependencies using `npm install` and then running `npm run build` in an environment with npm registry access.
+- Google Drive is a **static link catalog**, not an authenticated Drive API integration or automatic sync.
+- No PDFs or DOCX documents from Google Drive are embedded.
+- Ultimate English / Ultimate USB license prohibits incorporating licensed content into another app or digital system without written permission; only folder pointers are provided.
+- Notes and bookmarks are stored in the browser's localStorage, not synced. Export backups using Privacy & Deployment.
+- Hosting-level password protection may require a paid Netlify plan or external access control.
+- No AI integration.
