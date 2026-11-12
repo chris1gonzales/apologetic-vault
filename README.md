@@ -18,3 +18,12 @@ React + TypeScript + Vite application for Netlify. Includes the existing Veritas
 - Notes and bookmarks are stored in the browser's localStorage, not synced. Export backups using Privacy & Deployment.
 - Hosting-level password protection may require a paid Netlify plan or external access control.
 - No AI integration.
+
+## v1.5 — Comparative Worldviews
+- 60 private Google Drive PDF links in the existing searchable source catalog.
+- 16 original apologetics question studies with Scripture and 1689 references, plus browser-local notes.
+- No licensed PDF content is bundled or copied. Keep Drive permissions private.
+- Netlify access protection is not automatically configured; set it up in Netlify separately.
+
+## Veritas 1.6 — rights-aware historic research library
+Adds Public-Domain Library with edition-level reuse status, seven vetted source/index entries, and four original doctrinal study guides with Scripture and 1689 references. Source links are external; no third-party full text is bundled. The two Project Gutenberg editions have an explicit U.S. public-domain notice. Before importing additional texts, confirm the exact edition and any site-specific conditions. Personal notes remain in localStorage.
