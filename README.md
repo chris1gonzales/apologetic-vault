@@ -1,4 +1,4 @@
-# Veritas 1.4 — Private Research Workspace
+# Veritas 1.9 — Private Research Workspace
 
 React + TypeScript + Vite application for Netlify. Includes the existing Veritas studies, confessions, scripted apologetics simulator, Google Drive source catalog, source-note search, folder navigation, research notes, backups, and a privacy/deployment guide.
 
@@ -33,3 +33,9 @@ Added 36 original multiple-choice scenarios across atheism, Islam, Christian tra
 
 ## Veritas 1.8 — Evil & Theodicy
 16 original multiple-choice scenarios added, informed by Cornelius Van Til’s *Evil and Theodicy* (1923), with Scripture and 1689 references. No source PDF text is bundled. The source document remains in the user’s private Google Drive.
+
+## Version 1.9 — RTS Research Library
+- New RTS Research Library navigation page with five curated external resources, searchable original descriptions, Scripture and confessional references, and browser-local notes.
+- Three original study guides covering transcendental apologetics, canon recognition, and 1689 Baptist/Westminster covenant theology.
+- RTS lecture, article, transcript, and audio content is **not** bundled or copied; links open original sources.
+- No AI integration added.
