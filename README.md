@@ -62,3 +62,7 @@ The Qur’anic Research module automatically loads `public/corpus/quran-simple-v
 The Qur'anic Analysis area now includes a **Biblical comparison** tab with eight curated comparative research cases. Cases include Arabic Qur'anic text from the bundled Tanzil corpus, Bible references (not full copyrighted Bible text), Muslim and Christian interpretive perspectives, provisional assessments, browser-local notes, and JSON export. This is an editorial research index, not an automated contradiction detector or a verified critical apparatus.
 
 The package is **flat**: extract its contents directly to the repository root. Netlify can run `npm ci && npm run build` with `dist` as publish directory. The large reference PDFs increase repository and deploy size substantially.
+
+
+## English-first Qur’an research (v2.3.1)
+Qur’anic passages now prioritize the included Saheeh International English PDF. Arabic text is hidden by default and can be enabled with a checkbox. Full English verse-by-verse indexing is NOT included: the supplied PDF uses complex two-column layout, and an unverified extraction could misattribute verses. Reference-based navigation and the English PDF remain available.
