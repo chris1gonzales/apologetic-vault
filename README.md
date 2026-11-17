@@ -66,3 +66,13 @@ The package is **flat**: extract its contents directly to the repository root. N
 
 ## English-first Qur’an research (v2.3.1)
 Qur’anic passages now prioritize the included Saheeh International English PDF. Arabic text is hidden by default and can be enabled with a checkbox. Full English verse-by-verse indexing is NOT included: the supplied PDF uses complex two-column layout, and an unverified extraction could misattribute verses. Reference-based navigation and the English PDF remain available.
+
+
+English inline verses: 50 curated verse references extracted from the user-supplied 2010 Saheeh International edition (editor A. B. al-Mehri). Other verses explicitly show an unavailable message. PDF remains available for checking.
+
+
+## v2.5 English Qur'an index
+
+The app retrieves **Marmaduke Pickthall, The Meaning of the Glorious Koran (1930)**, a public-domain English translation, from the public AlQuran Cloud endpoint (`https://api.alquran.cloud/v1/quran/en.pickthall`) on first use. The response must contain **114 surahs and 6,236 nonempty uniquely numbered verses**, or it is rejected. The validated text is cached in the browser's localStorage if available. This edition **does not bundle all 6,236 English verses**, so initial online access and the API being reachable from the browser are required. Arabic Tanzil text remains bundled. The copyrighted Abdel Haleem translation is **not bundled**. The Saheeh International PDF remains a separate reference document. No Bible corpus is added in this version.
+
+Source and credit: Marmaduke Pickthall (1930), public domain in the United States. Data service: AlQuran Cloud, `https://alquran.cloud/`.
