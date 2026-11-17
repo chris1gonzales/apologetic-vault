@@ -39,3 +39,26 @@ Added 36 original multiple-choice scenarios across atheism, Islam, Christian tra
 - Three original study guides covering transcendental apologetics, canon recognition, and 1689 Baptist/Westminster covenant theology.
 - RTS lecture, article, transcript, and audio content is **not** bundled or copied; links open original sources.
 - No AI integration added.
+
+
+## Version 2.0 — Qur’anic Analysis tool
+
+New navigation item: **Qur’anic Analysis**. Includes curated research findings covering canonical readings, early manuscripts, oral/written transmission, Arabic loanwords, internal parallels, and methodological safeguards. Searchable Arabic demo excerpts and a browser-side importer for Tanzil-style `surah|ayah|Arabic` UTF-8 text; normalized repeated-phrase detection works after importing a full corpus. Research annotations are stored in localStorage and exportable as JSON.
+
+**Scope and limitations:** The ZIP does not bundle the complete Qur’an, a complete qirāʾāt apparatus, manuscript transcriptions, or automatic semantic contradiction analysis. These require verified and appropriately licensed sources. Importing a corpus is session-only. The built-in six passages are illustrative excerpts, not a complete Arabic edition.
+
+**Build:** `npm ci && npm run build`. The local build could not be verified in the authoring environment because the dependency installation did not complete (network unavailable). Run the build before deploying. Preserve the top-level `src/`, `index.html`, `package.json`, and `netlify.toml` layout.
+
+## v2.1 — Source library
+The Qur’anic Analysis tool now has a **Source library** tab with the two user-provided PDFs under `public/references/`: a 200-page image-only Arabic scan and the 798-page Saheeh International translation volume (2010, edited by A. B. al-Mehri). The edition’s preface notes changes to the translation. The PDFs are displayed side-by-side and downloadable; neither is automatically converted into a searchable verse-aligned Arabic corpus or a manuscript apparatus. The Arabic scan is large (~157 MB); Netlify deployments may take longer. Verify the source edition and distribution permissions before publishing publicly.
+
+
+## v2.2: Bundled searchable Arabic Qur’an
+
+The Qur’anic Research module automatically loads `public/corpus/quran-simple-v1.1.txt` (Tanzil Qur’an Text, Simple, Version 1.1). The source file is copied **verbatim** from the user-supplied Tanzil download, including its full copyright and attribution notice. Source: https://tanzil.net . The app validates 6,236 verses in 114 surahs, and runs normalized Arabic searches and repeated-phrase analysis in the browser without modifying the source. English verse-by-verse alignment and independent manuscript/qirāʾāt databases are not yet implemented.
+
+## Veritas 2.3 — Biblical comparison research
+
+The Qur'anic Analysis area now includes a **Biblical comparison** tab with eight curated comparative research cases. Cases include Arabic Qur'anic text from the bundled Tanzil corpus, Bible references (not full copyrighted Bible text), Muslim and Christian interpretive perspectives, provisional assessments, browser-local notes, and JSON export. This is an editorial research index, not an automated contradiction detector or a verified critical apparatus.
+
+The package is **flat**: extract its contents directly to the repository root. Netlify can run `npm ci && npm run build` with `dist` as publish directory. The large reference PDFs increase repository and deploy size substantially.
