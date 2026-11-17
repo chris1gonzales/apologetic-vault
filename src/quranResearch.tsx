@@ -1,4 +1,4 @@
-import React,{useEffect,useMemo,useState} from 'react';
+import {useEffect,useMemo,useState} from 'react';
 import {Search,Download,BookOpen,GitCompare,Languages,ScrollText} from 'lucide-react';
 import './quranResearch.css';
 import {comparisons} from './quranComparisons';
