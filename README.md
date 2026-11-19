@@ -86,3 +86,7 @@ Source and credit: Marmaduke Pickthall (1930), public domain in the United State
 
 ## v2.7 Hadith Research
 New mobile-friendly Hadith Research sidebar, six Sunni collection links, direct reference lookup (e.g. bukhari:1), curated research entries, cross-references, and locally saved notes. Full hadith text is not bundled; source links require internet.
+
+
+## Version 2.9: LDS and Jehovah’s Witnesses comparisons
+13 new curated comparisons, mobile-friendly navigation, official primary-source links, and browser-local notes. Summaries are original research and do not reproduce licensed publications.
