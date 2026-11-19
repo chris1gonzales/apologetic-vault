@@ -82,3 +82,7 @@ Source and credit: Marmaduke Pickthall (1930), public domain in the United State
 - Exact verse references work against either loaded corpus.
 - Compact collapsible corpus status, horizontal touch-friendly tabs, mobile search shortcut, larger inputs and visible result counts.
 - First-load English translation still requires internet; offline caching is best-effort.
+
+
+## v2.7 Hadith Research
+New mobile-friendly Hadith Research sidebar, six Sunni collection links, direct reference lookup (e.g. bukhari:1), curated research entries, cross-references, and locally saved notes. Full hadith text is not bundled; source links require internet.
