@@ -76,3 +76,9 @@ English inline verses: 50 curated verse references extracted from the user-suppl
 The app retrieves **Marmaduke Pickthall, The Meaning of the Glorious Koran (1930)**, a public-domain English translation, from the public AlQuran Cloud endpoint (`https://api.alquran.cloud/v1/quran/en.pickthall`) on first use. The response must contain **114 surahs and 6,236 nonempty uniquely numbered verses**, or it is rejected. The validated text is cached in the browser's localStorage if available. This edition **does not bundle all 6,236 English verses**, so initial online access and the API being reachable from the browser are required. Arabic Tanzil text remains bundled. The copyrighted Abdel Haleem translation is **not bundled**. The Saheeh International PDF remains a separate reference document. No Bible corpus is added in this version.
 
 Source and credit: Marmaduke Pickthall (1930), public domain in the United States. Data service: AlQuran Cloud, `https://alquran.cloud/`.
+
+## v2.6.1 mobile usability patch
+- Qur’an verse search now searches English translation independently of Arabic corpus load.
+- Exact verse references work against either loaded corpus.
+- Compact collapsible corpus status, horizontal touch-friendly tabs, mobile search shortcut, larger inputs and visible result counts.
+- First-load English translation still requires internet; offline caching is best-effort.
