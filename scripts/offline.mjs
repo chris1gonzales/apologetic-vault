@@ -8,7 +8,7 @@ const sw=`const CACHE=${JSON.stringify(cache)}, CORE=${JSON.stringify(core)}, LA
 let largeJob=null;
 async function fetchLarge(){const c=await caches.open(CACHE);for(const p of LARGE){if(await c.match(p))continue;try{const r=await fetch(new Request(p,{cache:'reload'}));if(r.ok)await c.put(p,r)}catch(_){}}}
 function startLarge(){if(!largeJob)largeJob=fetchLarge().finally(()=>{largeJob=null});return largeJob}
-self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(CORE.map(p=>new Request(p,{cache:'reload'})))})()));
+self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(CORE.map(p=>new Request(p,{cache:'reload'})));self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('vr-offline-')&&k!==CACHE)await caches.delete(k);await self.clients.claim();startLarge()})()));
 self.addEventListener('message',e=>{
 if(e.data==='VR_ACTIVATE')self.skipWaiting();
