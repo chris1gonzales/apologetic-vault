@@ -1,6 +1,6 @@
 {
-  "name": "veritas-theology",
-  "version": "3.5.0",
+  "name": "veritas-reformata",
+  "version": "3.8.0",
   "private": true,
   "type": "module",
   "scripts": {

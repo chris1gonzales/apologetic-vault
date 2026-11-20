@@ -1,4 +1,4 @@
-/* Original Veritas scenarios informed by the themes of Cornelius Van Til, Evil and Theodicy (1923). No source text reproduced. */
+/* Original Veritas Reformata scenarios informed by the themes of Cornelius Van Til, Evil and Theodicy (1923). No source text reproduced. */
 export const theodicyScenarios = [
   {
     "id": "vantil-theodicy-01",

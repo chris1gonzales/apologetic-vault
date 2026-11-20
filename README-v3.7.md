@@ -1,0 +1,2 @@
+# Veritas 3.7 — Exegetical Defense of Cessationism
+Expands all 17 Word of Faith studies with KJV excerpts, original language observations, contextual verse-range explanations, interpretive objections and 1689 confession references. Search includes expanded content; existing notes key and study order retained. Representative claims, not verified quotations from movement leaders. Original study notes are not a full commentary or a verified scholarly edition. Deploy root contents; npm ci; npm run build; publish dist.

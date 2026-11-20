@@ -1,3 +1,17 @@
+# Veritas Reformata v3.8.0
+
+**Grounded in Scripture. Defending the Faith.** Theology · Exegesis · Apologetics. John 17:17.
+
+Current release: 3.8.0. Branding update based on v3.7; existing modules and browser storage keys retained. See [README-v3.8.md](README-v3.8.md). Historical release notes below.
+
+---
+
+# Veritas v3.5 — Logic & Transcendental Apologetics
+
+**Historical version: 3.5.0.** This update adds the **Logic & Transcendental Apologetics** sidebar module with 29 fallacy definitions, classical logical laws and inference forms, 11 studies of TAG (Van Til, Bahnsen, Bavinck), 10 interactive questions, and browser-local research notes. See [README-v3.5.md](README-v3.5.md) for details. The existing v3.4 and earlier modules remain included.
+
+---
+
 # Veritas 1.9 — Private Research Workspace
 
 React + TypeScript + Vite application for Netlify. Includes the existing Veritas studies, confessions, scripted apologetics simulator, Google Drive source catalog, source-note search, folder navigation, research notes, backups, and a privacy/deployment guide.
@@ -90,3 +104,6 @@ New mobile-friendly Hadith Research sidebar, six Sunni collection links, direct 
 
 ## Version 2.9: LDS and Jehovah’s Witnesses comparisons
 13 new curated comparisons, mobile-friendly navigation, official primary-source links, and browser-local notes. Summaries are original research and do not reproduce licensed publications.
+
+## Version 3.7
+See README-v3.7.md for the expanded exegetical module.
