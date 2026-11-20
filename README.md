@@ -107,3 +107,6 @@ New mobile-friendly Hadith Research sidebar, six Sunni collection links, direct 
 
 ## Version 3.7
 See README-v3.7.md for the expanded exegetical module.
+
+## Version 3.9
+See [Offline Edition instructions](README-v3.9.md).
