@@ -42,7 +42,7 @@ const sections:Section[]=[
 '3. Read John 20:24–31: To whom does Thomas speak, and how does Jesus respond?',
 '4. Read Psalm 102:25–27 alongside Hebrews 1:10–12: Why does Hebrews apply Creator-language to the Son?',
 '5. Read Qur’an 5:72 in its literary context: Which claim is rejected, and how does that compare with Nicene Trinitarianism?',
-'6. Discuss the authority of each claimed revelation and the historical grounds for trusting its textual witness. Treat textual criticism as a separate evidential question rather than assuming corruption or perfect preservation.'
+'6. Discuss the authority of each claimed revelation and the historical grounds for trusting its textual witness. Christians confess that God has kept His Word pure in all ages (1689 1.8). Examine the manuscript evidence for both traditions honestly, and ask which view of revelation can account for its own transmission.'
 ]}
 ];
 const links=[{label:'John 1 (Greek, SBLGNT)',url:'https://www.biblegateway.com/passage/?search=John%201&version=SBLGNT'},{label:'John 20 (Greek, SBLGNT)',url:'https://www.biblegateway.com/passage/?search=John%2020&version=SBLGNT'},{label:'Hebrews 1 (Greek, SBLGNT)',url:'https://www.biblegateway.com/passage/?search=Hebrews%201&version=SBLGNT'},{label:'Qur’an 5:72 (Arabic morphology)',url:'https://corpus.quran.com/wordbyword.jsp?chapter=5&verse=72'},{label:'Qur’an 5:72 (translations)',url:'https://corpus.quran.com/translation.jsp?chapter=5&verse=72'},{label:'1689 Baptist Confession',url:'https://www.the1689confession.com/'}];

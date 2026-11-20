@@ -48,7 +48,7 @@ export const inferenceRules=[
 export const reasoningTypes=[
 {title:'Deduction',detail:'A valid argument guarantees its conclusion if its premises are true. Soundness additionally requires true premises.'},
 {title:'Induction',detail:'Observed cases support a general conclusion with varying degrees of strength; the conclusion is not logically guaranteed.'},
-{title:'Abduction',detail:'An inference to the best explanation; compare explanatory scope, fit with evidence, simplicity, and competing hypotheses.'},
+{title:'Abduction',detail:'An inference to the best explanation; compare explanatory scope, fit with evidence, simplicity, and competing hypotheses. In Veritas Reformata, abduction serves exegesis and history inside the Christian worldview; it is never the foundation for belief in God.'},
 {title:'Transcendental argument',detail:'Argues that a specified feature of experience, knowledge, or rational practice requires certain conditions of possibility. Whether a proposed condition is necessary must be argued, not assumed.'}
 ];
 export const tagSections=[
@@ -68,7 +68,7 @@ export const tagFormalization={
  title:'A schematic TAG (argument under evaluation)',
  premises:['P1. Rational knowledge and inference are possible.','P2. Rational knowledge and inference are possible only if the triune God of Scripture exists.','C. Therefore, the triune God of Scripture exists.'],
  analysis:'The form is valid (modus ponens after expressing P2 as a conditional), but soundness depends especially on defending P2. It is not sufficient to assert P2 or to show only that Christianity offers one explanation. The claim that Christianity is the uniquely necessary precondition must be argued against serious alternatives.',
- distinct:'A transcendental argument seeks necessary conditions of possibility; an ordinary evidential argument more often compares how well competing hypotheses explain a particular body of evidence. Veritas Reformata can use both, but neither manuscript evidence nor TAG should be presented as self-authenticating proof without argument.'
+ distinct:'A transcendental argument seeks necessary conditions of possibility; an ordinary evidential argument more often compares how well competing hypotheses explain a particular body of evidence. Veritas Reformata uses evidence within the transcendental framework, never as a neutral rival to it. Scripture is self-attesting (1689 1.4–5); the transcendental argument shows that every argument, including the unbeliever’s, presupposes the God who speaks there.'
 };
 export type Exercise={id:string;prompt:string;options:string[];answer:number;explanation:string;reference:string};
 export const exercises:Exercise[]=[

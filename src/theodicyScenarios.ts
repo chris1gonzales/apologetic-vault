@@ -6,9 +6,9 @@ export const theodicyScenarios = [
     "challenge": "“If God is both good and omnipotent, evil is logically impossible.”",
     "options": [
       {
-        "text": "Ask which premise entails a contradiction; distinguish logical inconsistency from evidence that makes theism seem unlikely.",
+        "text": "Ask which premise entails a contradiction, and show that the Christian worldview supplies the missing premise: God has a morally sufficient reason for the evil He ordains.",
         "correct": true,
-        "feedback": "Sound approach. Scripture: Romans 8:18–25; Revelation 21:4. Confessional study: 1689 3, 5. The response should address the objection without claiming exhaustive knowledge."
+        "feedback": "Right. The argument only works if it assumes something Christianity denies; answer it on Christian premises."
       },
       {
         "text": "Do not treat the existence of suffering as emotionally insignificant.",
