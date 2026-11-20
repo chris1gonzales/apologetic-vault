@@ -1,0 +1,194 @@
+[
+  {
+    "id": "F01",
+    "name": "Straw man",
+    "kind": "Informal",
+    "definition": "Distorting a position so that a weaker substitute can be refuted.",
+    "example": "Christianity teaches three gods, so it contradicts monotheism.",
+    "response": "Represent the doctrine as one divine essence and three persons before critiquing it."
+  },
+  {
+    "id": "F02",
+    "name": "Begging the question",
+    "kind": "Informal",
+    "definition": "Using the disputed conclusion as a premise without independent support.",
+    "example": "My interpretation is right because it is the correct interpretation.",
+    "response": "Ask which premises actually support the conclusion; worldview-level circularity requires further analysis."
+  },
+  {
+    "id": "F03",
+    "name": "Ad hominem",
+    "kind": "Informal",
+    "definition": "Attacking a speaker instead of the relevant argument.",
+    "example": "Your claim about Isaiah is wrong because you are not a scholar.",
+    "response": "Test the textual evidence, not the speaker's credentials or character."
+  },
+  {
+    "id": "F04",
+    "name": "False dilemma",
+    "kind": "Informal",
+    "definition": "Treating two alternatives as exhaustive without showing that they are.",
+    "example": "Jesus must be merely human or Christians must believe in three gods.",
+    "response": "Identify the omitted alternatives and clarify orthodox Christology."
+  },
+  {
+    "id": "F05",
+    "name": "Equivocation",
+    "kind": "Informal",
+    "definition": "Shifting the meaning of a significant term within an argument.",
+    "example": "God is one, so there can only be one divine person.",
+    "response": "Distinguish unity of being from number of persons."
+  },
+  {
+    "id": "F06",
+    "name": "Circular reasoning",
+    "kind": "Informal",
+    "definition": "A conclusion is supported only by premises that depend on that same conclusion.",
+    "example": "This text is inspired because it is divine, and divine because inspired.",
+    "response": "Identify the circular dependency; ultimate commitments may be unavoidable but need substantive worldview defense."
+  },
+  {
+    "id": "F07",
+    "name": "Appeal to inappropriate authority",
+    "kind": "Informal",
+    "definition": "Treating irrelevant or insufficient expertise as decisive evidence.",
+    "example": "A celebrity says the Bible is corrupt; therefore it is.",
+    "response": "Examine primary evidence and relevant expertise."
+  },
+  {
+    "id": "F08",
+    "name": "Appeal to ignorance",
+    "kind": "Informal",
+    "definition": "Inferring truth solely from the absence of disproof, or falsity from absence of proof.",
+    "example": "No one disproved this manuscript story, therefore it is certain.",
+    "response": "Distinguish absence of evidence from positive support."
+  },
+  {
+    "id": "F09",
+    "name": "Hasty generalization",
+    "kind": "Informal",
+    "definition": "Generalizing from a small or unrepresentative sample.",
+    "example": "One manuscript differs, therefore all Bible manuscripts are unreliable.",
+    "response": "Evaluate the full manuscript tradition and the variant's significance."
+  },
+  {
+    "id": "F10",
+    "name": "Red herring",
+    "kind": "Informal",
+    "definition": "Introducing an irrelevant issue to divert from the question.",
+    "example": "Asked about resurrection evidence, the speaker discusses medieval church politics.",
+    "response": "Return to the original claim."
+  },
+  {
+    "id": "F11",
+    "name": "Genetic fallacy",
+    "kind": "Informal",
+    "definition": "Evaluating a claim solely by its origin rather than its merits.",
+    "example": "The doctrine was debated at Nicaea, so it was invented there.",
+    "response": "Check preconciliar sources and biblical exegesis."
+  },
+  {
+    "id": "F12",
+    "name": "Tu quoque",
+    "kind": "Informal",
+    "definition": "Treating an opponent's inconsistency as a refutation of their argument.",
+    "example": "You also have textual variants, so mine need no examination.",
+    "response": "Assess both textual traditions independently."
+  },
+  {
+    "id": "F13",
+    "name": "Special pleading",
+    "kind": "Informal",
+    "definition": "Applying a rule selectively without a relevant justification.",
+    "example": "All ancient reports need scrutiny except my favorite report.",
+    "response": "Apply consistent evidential standards."
+  },
+  {
+    "id": "F14",
+    "name": "No true Scotsman",
+    "kind": "Informal",
+    "definition": "Arbitrarily redefining a group to evade a counterexample.",
+    "example": "No real Christian has ever interpreted this differently.",
+    "response": "Use independent, historically grounded criteria."
+  },
+  {
+    "id": "F15",
+    "name": "Composition",
+    "kind": "Informal",
+    "definition": "Attributing a property of parts to the whole without warrant.",
+    "example": "Each manuscript is imperfect; therefore the complete textual tradition contains no recoverable readings.",
+    "response": "Check whether the property transfers."
+  },
+  {
+    "id": "F16",
+    "name": "Division",
+    "kind": "Informal",
+    "definition": "Attributing a property of a whole to each part without warrant.",
+    "example": "The collection is ancient; every manuscript in it must be ancient.",
+    "response": "Evaluate individual witnesses."
+  },
+  {
+    "id": "F17",
+    "name": "Post hoc ergo propter hoc",
+    "kind": "Informal",
+    "definition": "Assuming sequence alone establishes causation.",
+    "example": "A council followed a controversy; therefore it caused the doctrine.",
+    "response": "Seek evidence for a causal mechanism."
+  },
+  {
+    "id": "F18",
+    "name": "Slippery slope",
+    "kind": "Informal",
+    "definition": "Asserting a chain of serious consequences without adequate support.",
+    "example": "One disputed reading means all biblical doctrine collapses.",
+    "response": "Test each proposed implication."
+  },
+  {
+    "id": "F19",
+    "name": "Loaded question",
+    "kind": "Informal",
+    "definition": "Embedding a contested assumption in the question.",
+    "example": "When did Christians decide to invent the Trinity?",
+    "response": "Reject the presupposition and ask for evidence."
+  },
+  {
+    "id": "F20",
+    "name": "Category mistake",
+    "kind": "Conceptual",
+    "definition": "Applying a predicate to an entity of the wrong logical kind.",
+    "example": "Which divine person is the entire divine essence?",
+    "response": "Clarify the distinction between person and essence."
+  },
+  {
+    "id": "F21",
+    "name": "Affirming the consequent",
+    "kind": "Formal",
+    "definition": "From P→Q and Q, invalidly inferring P.",
+    "example": "If inspired, then truthful; this statement is truthful; therefore inspired.",
+    "response": "Other grounds may explain Q; the inference is invalid."
+  },
+  {
+    "id": "F22",
+    "name": "Denying the antecedent",
+    "kind": "Formal",
+    "definition": "From P→Q and ¬P, invalidly inferring ¬Q.",
+    "example": "If an autograph, authoritative; not an autograph, so not authoritative.",
+    "response": "The conditional does not rule out other cases of Q."
+  },
+  {
+    "id": "F23",
+    "name": "Undistributed middle",
+    "kind": "Formal",
+    "definition": "Two categories share a property, but that does not prove membership in each other.",
+    "example": "All prophets speak of God; this person speaks of God; therefore a prophet.",
+    "response": "Sharing a predicate does not establish identity of classes."
+  },
+  {
+    "id": "F24",
+    "name": "Non sequitur",
+    "kind": "General",
+    "definition": "The conclusion does not follow from the premises.",
+    "example": "This scroll is ancient; therefore every assertion in it is true.",
+    "response": "Separate age, accurate transmission, and truth of content."
+  }
+]
