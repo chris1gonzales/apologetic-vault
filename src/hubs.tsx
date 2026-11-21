@@ -1,7 +1,7 @@
 export type HubDef={id:string,label:string,pages:[string,string][]};
 export const hubs:HubDef[]=[
-{id:'scripture',label:'Scripture',pages:[['scripture','Research'],['workspace','Workspace']]},
-{id:'islam',label:'Islam & the Qur’an',pages:[['quran','Qur’anic research'],['hadith','Hadith'],['muhammadQuran','Muhammad & origins'],['applied','Applied briefs'],['christologyIslam','Deity of Christ'],['trinity4171','Qur’an 4:171'],['torahQuran','Torah & Qur’anic accounts']]},
+{id:'scripture',label:'Scripture',pages:[['bibleReader','Bible Reader'],['scripture','Research'],['sources','Sources'],['confession1689','1689 Confession'],['workspace','Workspace']]},
+{id:'islam',label:'Islam & the Qur’an',pages:[['quran','Qur’anic research'],['hadith','Hadith'],['muhammadQuran','Muhammad & origins'],['christologyIslam','Deity of Christ'],['trinity4171','Qur’an 4:171'],['torahQuran','Torah & Qur’anic accounts']]},
 {id:'manuscripts',label:'Manuscripts & textual criticism',pages:[['textualCriticism','Inerrancy & the Bible’s text'],['manuscriptCriticism','OT & Qur’an manuscripts']]},
 {id:'method',label:'Apologetics method',pages:[['logicArgumentation','Logic & TAG'],['apologeticsFramework','Standards & method']]},
 {id:'other',label:'Other teachings',pages:[['wordFaith','Word of Faith & NAR'],['comparisons','LDS & JW'],['worldviews','Comparative worldviews']]},

@@ -40,30 +40,6 @@ differ:['Mary is called “sister of Aaron” and daughter of “Imran” (Q 19:
 muslim:'Muslims take “sister of Aaron” as a figure of speech (“of Aaron’s line” or “like Aaron”), and see “Imran” as a family name.',
 scripture:'The Gospels, written within living memory of the events, are the primary witness; see the Christology and Qur’an 4:171 modules for fuller treatment (Luke 1:1–4).'}
 ];
-export const tahrif={
-title:'What the Qur’an says about the Torah',
-intro:'Several passages treat the Torah as available in Muhammad’s time and as guidance. Citations below are to the Qur’an and are summarized, not quoted.',
-verses:[
-['Q 5:43–46','Jews have the Torah “with God’s judgment,” and it contains guidance and light.'],
-['Q 5:47','The People of the Gospel are told to judge by what God sent down in it.'],
-['Q 10:94','Muhammad is told to ask those who have been reading the Book before him if he is in doubt.'],
-['Q 3:3','The Qur’an confirms what came before it, the Torah and the Gospel.']],
-muslim:'Muslim scholars differ. Many hold that the text was altered (taḥrīf al-lafẓ); others hold that the meaning was distorted (taḥrīf al-ma‘nā) while the text stayed. Some argue the Torah of Moses is not the same as the surviving text.',
-pressure:'Dead Sea Scroll copies of the Pentateuch predate Muhammad by more than 600 years and match the later text closely, so any alteration of the text itself would have to be earlier than them. That presses the claim that the surviving Torah was corrupted after Muhammad affirmed it. Note the limit: manuscripts show how the text was preserved. The inspiration and truth of Scripture rest on its own testimony, not on them (see the standard above).'};
-export type Ms={id:string,side:'Torah'|'Qur’an',name:string,date:string,what:string,note:string,url?:string};
-export const manuscripts:Ms[]=[
-{id:'ketef',side:'Torah',name:'Ketef Hinnom silver amulets',date:'about 7th–6th century BC (dating debated)',what:'Two small silver scrolls with a form of the priestly blessing (Numbers 6:24–26).',note:'Among the earliest known biblical text; some scholars propose a later date.'},
-{id:'dss',side:'Torah',name:'Dead Sea Scrolls (Pentateuch copies)',date:'about 3rd century BC–1st century AD',what:'Dozens of copies of the books of Moses from the caves near Qumran.',note:'More than 600 years before Muhammad; text generally close to the later Hebrew text, with some variants.',url:'https://www.deadseascrolls.org.il/'},
-{id:'nash',side:'Torah',name:'Nash Papyrus',date:'about 2nd–1st century BC',what:'A fragment with the Ten Commandments and the Shema.',note:'Shows liturgical use of Torah passages.'},
-{id:'lxx',side:'Torah',name:'Septuagint (Greek)',date:'begun 3rd century BC; manuscripts 4th century AD onward',what:'Greek translation of the Torah, later all of the Old Testament.',note:'Independent witness; sometimes preserves different readings.'},
-{id:'sam',side:'Torah',name:'Samaritan Pentateuch',date:'tradition ancient; medieval manuscripts',what:'The Torah as preserved by the Samaritans.',note:'Thousands of small differences from the Hebrew text, most minor.'},
-{id:'aleppo',side:'Torah',name:'Aleppo Codex',date:'about 930 AD',what:'Hebrew Bible with Masoretic vowel and accent markings.',note:'Partly damaged; key reference for the Masoretic tradition.',url:'http://www.aleppocodex.org/'},
-{id:'len',side:'Torah',name:'Leningrad Codex',date:'1008–1009 AD',what:'Complete Hebrew Bible; basis of modern critical editions.',note:'Public-domain text widely available online.',url:'https://www.sefaria.org/'},
-{id:'birm',side:'Qur’an',name:'Birmingham Qur’an folios (Mingana 1572a)',date:'radiocarbon 568–645 AD (reported)',what:'Two parchment leaves with parts of Q 18–20 in Hijazi script.',note:'Dating applies to the parchment, not necessarily the writing; ranges are debated.'},
-{id:'sanaa',side:'Qur’an',name:'Ṣan‘ā’ palimpsest (DAM 01-27.1)',date:'lower text radiocarbon about 578–669 AD (reported)',what:'A manuscript with an erased earlier text beneath the visible Qur’an.',note:'The lower text shows some differences in wording and order from the standard text; scholars discuss their significance.',url:'https://corpuscoranicum.de/'},
-{id:'tub',side:'Qur’an',name:'Tübingen fragment (Ma VI 165)',date:'radiocarbon about 649–675 AD (reported)',what:'An early Qur’an fragment.',note:'Among the earliest dated copies.'},
-{id:'topkapi',side:'Qur’an',name:'Topkapı and Samarkand Kufic manuscripts',date:'about 8th–9th century AD',what:'Large early codices traditionally linked to the ‘Uthmanic text.',note:'The traditional link to ‘Uthman is a tradition; palaeographic dating is later.'}
-];
 export const method=[
 'Start from Scripture as the unmoving standard; state this openly, as everyone has an ultimate standard (2 Corinthians 10:5).',
 'Describe the other account in a form its adherents would accept, with the Muslim response beside each difference.',
@@ -72,10 +48,3 @@ export const method=[
 'Use manuscript evidence for what it can show (transmission), not to prove inspiration.',
 'Ask what each position presupposes about revelation and preservation, in an internal critique (see the Logic lab).',
 'Keep a gentle, courteous tone (1 Peter 3:15–16; 2 Timothy 2:24–25).'];
-export const links:[string,string,string][]=[
-['Dead Sea Scrolls Digital Library','https://www.deadseascrolls.org.il/','High-resolution images of the scrolls (Israel Museum). Linked, not copied.'],
-['Aleppo Codex','http://www.aleppocodex.org/','Images and text of the Aleppo Codex.'],
-['Sefaria','https://www.sefaria.org/','Hebrew Bible texts and translations (check each text’s license).'],
-['Corpus Coranicum','https://corpuscoranicum.de/','Qur’anic manuscripts and variants (Berlin-Brandenburg Academy).'],
-['Tanzil','https://tanzil.net/','Qur’an text; terms of use apply.'],
-['Bible Hub','https://biblehub.com/','Verse-by-verse Bible study with parallel versions.']];

@@ -5,6 +5,6 @@ const book=BOOKS.filter(b=>ref.startsWith(b+' ')).sort((a,b)=>b.length-a.length)
 const m=ref.slice(book.length+1).match(/^(\d+)(?::(\d+))?/);if(!m)return null;
 let slug=book.toLowerCase().replace(/ /g,'_');if(slug==='psalm')slug='psalms';if(slug==='song_of_songs')slug='song_of_solomon';
 let ch=m[1],v=m[2];if(ONE.includes(book)&&!v){v=ch;ch='1'}
-return 'https://biblehub.com/'+slug+'/'+ch+(v?'-'+v:'')+'.htm'}
+return 'https://biblehub.com/nasb/'+slug+'/'+ch+(v?'-'+v:'')+'.htm'}
 export function Ref({r}:{r:string}){const u=bibleHubUrl(r);if(!u)return <>{r}</>;
-return <a href={u} target="_blank" rel="noopener noreferrer" title="Open on Bible Hub (internet required)" onClick={e=>e.stopPropagation()} style={{color:'inherit',textDecoration:'underline dotted',textUnderlineOffset:3}}>{r}</a>}
+return <a href={u} target="_blank" rel="noopener noreferrer" title="Open in the NASB on Bible Hub (internet required)" onClick={e=>e.stopPropagation()} style={{color:'inherit',textDecoration:'underline dotted',textUnderlineOffset:3}}>{r}</a>}

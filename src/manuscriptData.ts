@@ -87,6 +87,7 @@ export const links:[string,string,string][]=[
 ['Sana’a palimpsest (Institute of Ismaili Studies)','https://www.iis.ac.uk/?p=11850','Description of the palimpsest and Asma Hilali’s edition.'],
 ['Dead Sea Scrolls Digital Library','https://www.deadseascrolls.org.il/','Israel Museum images of the scrolls.'],
 ['Aleppo Codex','http://www.aleppocodex.org/','Images and text of the Aleppo Codex.'],
+['Tanzil','https://tanzil.net/','Qur’an text; terms of use apply.'],
 ['Bible Hub','https://biblehub.com/','Verse-by-verse study with parallel versions.']];
 export type Ed={id:string,name:string,url:string,access:'Free to read'|'Paid / library'|'Free images'|'Mixed',note:string};
 export const editions:Record<'Old Testament'|'New Testament'|'Dead Sea Scrolls'|'Qur’an',Ed[]>={
@@ -127,3 +128,19 @@ mss:[E('Qur’an','birm'),E('Qur’an','tub'),E('Qur’an','coranica'),E('Qur’
 sanaa:[E('Qur’an','sanaa'),E('Qur’an','cc')],
 readings:[E('Qur’an','cc')],
 codices:[E('Qur’an','cc')]};
+
+export type Ms={id:string,side:'Torah'|'Qur’an',name:string,date:string,what:string,note:string,url?:string};
+export const manuscripts:Ms[]=[
+{id:'ketef',side:'Torah',name:'Ketef Hinnom silver amulets',date:'about 7th–6th century BC (dating debated)',what:'Two small silver scrolls with a form of the priestly blessing (Numbers 6:24–26).',note:'Among the earliest known biblical text; some scholars propose a later date.'},
+{id:'dss',side:'Torah',name:'Dead Sea Scrolls (Pentateuch copies)',date:'about 3rd century BC–1st century AD',what:'Dozens of copies of the books of Moses from the caves near Qumran.',note:'More than 600 years before Muhammad; text generally close to the later Hebrew text, with some variants.',url:'https://www.deadseascrolls.org.il/'},
+{id:'nash',side:'Torah',name:'Nash Papyrus',date:'about 2nd–1st century BC',what:'A fragment with the Ten Commandments and the Shema.',note:'Shows liturgical use of Torah passages.'},
+{id:'lxx',side:'Torah',name:'Septuagint (Greek)',date:'begun 3rd century BC; manuscripts 4th century AD onward',what:'Greek translation of the Torah, later all of the Old Testament.',note:'Independent witness; sometimes preserves different readings.'},
+{id:'sam',side:'Torah',name:'Samaritan Pentateuch',date:'tradition ancient; medieval manuscripts',what:'The Torah as preserved by the Samaritans.',note:'Thousands of small differences from the Hebrew text, most minor.'},
+{id:'aleppo',side:'Torah',name:'Aleppo Codex',date:'about 930 AD',what:'Hebrew Bible with Masoretic vowel and accent markings.',note:'Partly damaged; key reference for the Masoretic tradition.',url:'http://www.aleppocodex.org/'},
+{id:'len',side:'Torah',name:'Leningrad Codex',date:'1008–1009 AD',what:'Complete Hebrew Bible; basis of modern critical editions.',note:'Public-domain text widely available online.',url:'https://www.sefaria.org/'},
+{id:'birm',side:'Qur’an',name:'Birmingham Qur’an folios (Mingana 1572a)',date:'radiocarbon 568–645 AD (reported)',what:'Two parchment leaves with parts of Q 18–20 in Hijazi script.',note:'Dating applies to the parchment, not necessarily the writing; ranges are debated.'},
+{id:'sanaa',side:'Qur’an',name:'Ṣan‘ā’ palimpsest (DAM 01-27.1)',date:'lower text radiocarbon about 578–669 AD (reported)',what:'A manuscript with an erased earlier text beneath the visible Qur’an.',note:'The lower text shows some differences in wording and order from the standard text; scholars discuss their significance.',url:'https://corpuscoranicum.de/'},
+{id:'tub',side:'Qur’an',name:'Tübingen fragment (Ma VI 165)',date:'radiocarbon about 649–675 AD (reported)',what:'An early Qur’an fragment.',note:'Among the earliest dated copies.'},
+{id:'topkapi',side:'Qur’an',name:'Topkapı and Samarkand Kufic manuscripts',date:'about 8th–9th century AD',what:'Large early codices traditionally linked to the ‘Uthmanic text.',note:'The traditional link to ‘Uthman is a tradition; palaeographic dating is later.'}
+];
+

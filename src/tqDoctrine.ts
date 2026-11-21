@@ -22,4 +22,12 @@ export const qOnScripture:QS[]=[
 {ref:'Q 5:68',says:'Tells the People of the Scripture they have nothing until they observe the Torah and the Gospel.',note:'pressure'},
 {ref:'Q 10:94',says:'Tells Muhammad, if in doubt, to ask those who read the Scripture before him.',note:'pressure'},
 {ref:'Q 21:7',says:'Tells its audience to ask “the followers of the Reminder” if they do not know.'}];
-export const qPressure='These verses send the reader to the Torah and the Gospel as they existed in Muhammad’s day. That is hard to square with a claim that those books had already been wholly corrupted. This is the pressure point the manuscript evidence tests: the Dead Sea Scrolls (third century BC to first century AD) and the Septuagint predate Muhammad by centuries. Muslims reply that the verses accuse only some people of distortion (Q 2:75; 4:46; 5:13) or that the Torah the Qur’an means is not the text now in the Jewish canon.';
+export const qAccuse:[string,string][]=[
+['Q 2:75','Some knowingly distort God’s words after understanding them.'],
+['Q 2:79','Some write a text themselves and falsely attribute it to God.'],
+['Q 3:78','Some distort Scripture with their tongues.'],
+['Q 4:46','Some displace words from their proper contexts.'],
+['Q 5:13','Some distort words and neglect part of what they were taught.'],
+['Q 5:41','Some alter words from their proper places.']];
+export const qMuslim='Muslim scholars distinguish two kinds of taḥrīf (distortion). Taḥrīf al-lafẓ is alteration of the wording. Taḥrīf al-maʿnā is distortion of the meaning while the wording stays. Many hold that the text was altered, and others that only the meaning was twisted. Some argue that the Torah of Moses is not the same as the surviving text. Whether these verses prove the whole Torah was corrupted is a separate interpretive question.';
+export const qPressure='The verses above send the reader to the Torah and the Gospel as they existed in Muhammad’s day. That is hard to square with a claim that those books had already been wholly corrupted. Dead Sea Scroll copies of the Pentateuch predate Muhammad by more than 600 years and match the later Hebrew text closely, and the Septuagint is older still, so any alteration of the text itself would have to be earlier than them. Muslims reply that the verses accuse only some people of distortion, or that the Torah the Qur’an means is not the text now in the Jewish canon. Note the limit: manuscripts show how the text was preserved (1689 1.8). The inspiration and truth of Scripture rest on its own testimony (2 Timothy 3:16), not on them.';
