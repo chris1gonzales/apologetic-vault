@@ -11,7 +11,7 @@ const c=+x[1];
 if(x[2]){const v1=+x[2],v2=x[3]?+x[3]:v1;const t=ch[c-1]||[];out.push({label:`${m[1]} ${c}:${v1}${v2!==v1?'–'+v2:''}`,vs:t.slice(v1-1,v2).map((tx,i)=>[v1+i,tx] as [number,string])})}
 else{const c2=x[3]?+x[3]:c;for(let k=c;k<=c2;k++){const t=ch[k-1]||[];out.push({label:`${m[1]} ${k}`,vs:t.map((tx,i)=>[i+1,tx] as [number,string])})}}}
 return out}
-function parseQuran(ref:string,q:string[][],ar:Record<string,string>|null):(Seg&{ar:[number,string][]})[]{
+export function parseQuran(ref:string,q:string[][],ar:Record<string,string>|null):(Seg&{ar:[number,string][]})[]{
 const out:(Seg&{ar:[number,string][]})[]=[];
 for(const raw of ref.replace(/\(.*?\)/g,'').split(';')){const x=raw.trim().match(/^(\d+):(\d+)(?:[–-](\d+))?$/);if(!x)continue;
 const s=+x[1],v1=+x[2],v2=x[3]?+x[3]:v1;const t=q[s-1]||[];

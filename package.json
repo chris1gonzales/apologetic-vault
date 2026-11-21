@@ -1,6 +1,6 @@
 {
   "name": "veritas-reformata",
-  "version": "3.21.0",
+  "version": "3.22.0",
   "private": true,
   "type": "module",
   "scripts": {
