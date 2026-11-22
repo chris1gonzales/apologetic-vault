@@ -51,6 +51,7 @@ const status:{c:string,s:'confirmed'|'verify'|'unconfirmed',n:string}[]=[
 {c:'Tafsir and Hadith references on Muslim positions',s:'verify',n:'Book and surah references are given; wording of individual tafsir opinions should be checked in the work itself.'},
 {c:'Rabbinic and Jewish parallels',s:'verify',n:'Tractate and chapter references are standard; check on Sefaria.org.'},
 {c:'1689 Confession text with proof texts',s:'verify',n:'Embedded from the PDF you supplied (32 chapters, 160 paragraphs, proofs included). Spot-check against a printed edition before formal quotation.'},
+{c:'Contradiction cards (18) on the Torah and Qur’anic Accounts page',s:'verify',n:'Bible and Qur’an wording is exact (KJV and Pickthall, Qur’an Arabic from Tanzil). Tafsir excerpts were seen on Quran.com, al-Islam.org and IslamQA; each Muslim explanation is marked checked, secondary or verify. Ṭabarī was not read directly, and the Jewish sources (Genesis Rabbah, Pirke de-Rabbi Eliezer, Tanḥuma, the Testament of Solomon) are marked verify.'},
 {c:'Abrogation table and the nine added doctrines',s:'verify',n:'Verse texts are exact (Pickthall and Tanzil). Scholar names, counts, classifications and hadith references come from standard works but are not checked against them.'},
 {c:'Khan Bukhari translation and Saheeh International PDF',s:'unconfirmed',n:'Check redistribution licence before keeping them on the public site.'}];
 const col={confirmed:'#2e7d32',verify:'#b26a00',unconfirmed:'#b00020'};
