@@ -1,0 +1,112 @@
+[
+  {
+    "id": "01",
+    "title": "Dead Sea Scrolls",
+    "subtitle": "Qumran discoveries and Hebrew Bible transmission",
+    "history": "The Dead Sea Scrolls, discovered beginning in 1947, include biblical manuscripts from before the medieval Masoretic codices. They establish that many biblical books circulated centuries before the oldest complete medieval Hebrew Bible manuscripts. They also attest textual plurality: some witnesses are close to the proto-Masoretic tradition, others resemble the Septuagint or Samaritan Pentateuch, and others are non-aligned.",
+    "witnesses": "Great Isaiah Scroll (1QIsaᵃ); 1QIsab; 4QSamuel; 4QJeremiah; 4QDeuteronomy",
+    "scripture": "Isaiah 40:8; Luke 24:44; 2 Timothy 3:16",
+    "objection": "The Great Isaiah Scroll is a striking witness to long-term textual continuity, but it contains spelling and other variants. Do not claim that every letter is identical to the medieval Masoretic text.",
+    "response": "The scrolls document both substantial continuity and real variation. Textual criticism evaluates individual readings; inerrancy concerns the God-given text, not uniformity of every copy.",
+    "source": "https://www.deadseascrolls.org.il/"
+  },
+  {
+    "id": "02",
+    "title": "Great Isaiah Scroll",
+    "subtitle": "1QIsaᵃ and the preservation of Isaiah",
+    "history": "The nearly complete Great Isaiah Scroll, dated by paleography and other evidence to the late Second Temple period, is one of the earliest extensive witnesses to Isaiah. Compare Isaiah 53 and other passages directly with the Masoretic Text and Greek evidence; record actual variants rather than claiming none exist.",
+    "witnesses": "1QIsaᵃ; Masoretic Isaiah; Septuagint Isaiah",
+    "scripture": "Isaiah 53; Isaiah 40:8; 1 Peter 1:24–25",
+    "objection": "A critic may point to numerous orthographic and occasional substantive differences. Those must be acknowledged and assessed, not dismissed.",
+    "response": "Continuity of Isaiah is historically significant, but divine inspiration is grounded in God’s revelation rather than a manuscript statistic.",
+    "source": "https://www.imj.org.il/en/wings/shrine-book/dead-sea-scrolls"
+  },
+  {
+    "id": "03",
+    "title": "Masoretic Text and Septuagint",
+    "subtitle": "Hebrew and Greek witnesses to the Old Testament",
+    "history": "The Masoretic Text preserves a carefully transmitted Hebrew textual tradition; the Septuagint is a family of ancient Greek translations with varied translation techniques and textual histories. Differences may reflect translation, a distinct Hebrew Vorlage, or later copying. The New Testament sometimes follows Greek wording.",
+    "witnesses": "Leningrad Codex; Aleppo Codex; Greek Septuagint; Qumran witnesses",
+    "scripture": "Luke 4:16–21; Acts 15:15–18; Romans 3:10–18",
+    "objection": "Do not treat every Septuagint–Masoretic difference as a copying mistake or proof of deliberate corruption.",
+    "response": "The witness traditions require case-by-case textual analysis, while Christian doctrine rests on the whole canonical testimony.",
+    "source": "https://www.septuaginta.net/"
+  },
+  {
+    "id": "04",
+    "title": "New Testament Manuscripts",
+    "subtitle": "Papyri, uncials, minuscules, and lectionaries",
+    "history": "New Testament textual criticism compares Greek manuscripts, ancient translations, and quotations in early Christian authors. P52 is an early witness to John, but its precise date is debated. P66 and P75 are important witnesses to the Gospels; Codex Vaticanus and Codex Sinaiticus are major fourth-century biblical codices.",
+    "witnesses": "P52; P66; P75; Codex Vaticanus; Codex Sinaiticus",
+    "scripture": "John 20:30–31; Luke 1:1–4; 2 Peter 1:16",
+    "objection": "More manuscripts also means more recorded variants; counting variants without distinguishing their significance is misleading.",
+    "response": "Textual criticism seeks the earliest recoverable wording; no single surviving codex is presumed to be flawless.",
+    "source": "https://ntvmr.uni-muenster.de/"
+  },
+  {
+    "id": "05",
+    "title": "Major New Testament Variants",
+    "subtitle": "Mark 16, John 7–8, and 1 John 5",
+    "history": "Mark 16:9–20 and John 7:53–8:11 have complex manuscript histories and are marked in many critical editions. The expanded Trinitarian Comma in 1 John 5:7–8 lacks support in early Greek manuscripts. Defend the Trinity from securely attested texts rather than relying on the Comma.",
+    "witnesses": "Mark 16:9–20; John 7:53–8:11; 1 John 5:7–8",
+    "scripture": "Matthew 28:19; John 1:1–3; 2 Corinthians 13:14",
+    "objection": "These passages are genuine textual questions; claiming there are no consequential variants is indefensible.",
+    "response": "Christian Trinitarian doctrine does not depend on the Comma Johanneum. Preserve transparency in presenting disputed passages.",
+    "source": "https://ntvmr.uni-muenster.de/"
+  },
+  {
+    "id": "06",
+    "title": "Early Christian Writers",
+    "subtitle": "Patristic citations and the early transmission of Scripture",
+    "history": "Early Christian writers quote, paraphrase, and allude to biblical writings. Their testimony helps date the circulation of texts and sometimes illuminate readings, but citations may be from memory or adapted for argument. The Didache and Justin Martyr are relevant to early Christian practice and belief.",
+    "witnesses": "Didache; Justin Martyr; Irenaeus; Origen",
+    "scripture": "1 Corinthians 15:3–8; Jude 3; 2 Timothy 2:2",
+    "objection": "Patristic quotations are not a substitute for manuscripts and are not always verbatim.",
+    "response": "Use early testimony as corroborative historical evidence, not as an independent source of inspiration.",
+    "source": "https://www.earlychristianwritings.com/"
+  },
+  {
+    "id": "07",
+    "title": "Biblical Archaeology",
+    "subtitle": "Inscriptions and material culture in biblical history",
+    "history": "The Tel Dan inscription is commonly interpreted as referring to the House of David; the Pilate Stone attests Pontius Pilate; the Siloam Inscription illuminates ancient Jerusalem waterworks; the Cyrus Cylinder provides context for Persian imperial policy but does not directly prove every detail of Ezra.",
+    "witnesses": "Tel Dan Stele; Pilate Stone; Siloam Inscription; Cyrus Cylinder",
+    "scripture": "2 Kings 20:20; John 19:1–16; Ezra 1:1–4",
+    "objection": "Archaeology can confirm persons or settings without establishing the supernatural meaning of events. Identification and dating of finds can be contested.",
+    "response": "Historical corroboration matters, but do not turn an artifact into proof of every claim in a biblical narrative.",
+    "source": "https://www.britishmuseum.org/collection"
+  },
+  {
+    "id": "08",
+    "title": "Canon and Reception",
+    "subtitle": "Recognition of the biblical books",
+    "history": "The Old and New Testament canons were recognized through historical processes involving use, transmission, and debate. Early lists and church writers show broad early agreement alongside disputed books. Distinguish the church’s recognition of Scripture from the confessional claim that the church creates Scripture’s authority.",
+    "witnesses": "Muratorian Fragment; Athanasius Festal Letter 39; early codices",
+    "scripture": "Luke 24:44; John 10:35; 2 Peter 3:15–16",
+    "objection": "The fourth-century lists were not the first occasion Christians read the apostolic writings as authoritative.",
+    "response": "The 1689 Confession 1.4–1.5 grounds biblical authority in God, while acknowledging the church’s ministerial testimony.",
+    "source": "https://www.newadvent.org/fathers/2806039.htm"
+  },
+  {
+    "id": "09",
+    "title": "Inerrancy and Autographs",
+    "subtitle": "Inspiration, copies, and interpretive responsibility",
+    "history": "The 1689 Confession 1.8 speaks of the Old Testament in Hebrew and New Testament in Greek being immediately inspired and kept pure in all ages. Historic Protestant accounts of inerrancy refer to Scripture as given by God; textual criticism investigates transmission. Interpret according to genre, ordinary language, authorial intention, and context.",
+    "witnesses": "1689 London Baptist Confession chapter 1; Chicago Statement on Biblical Inerrancy (for comparison)",
+    "scripture": "2 Timothy 3:16–17; John 17:17; Matthew 5:18; Titus 1:2",
+    "objection": "An extant manuscript may contain a scribal error without showing that God erred in inspiring Scripture. Yet an appeal to lost autographs must not be used to evade specific evidence.",
+    "response": "Inerrancy is a theological claim about God’s truthful speech; manuscript work is an evidential discipline that helps identify the text.",
+    "source": "https://www.the1689confession.com/1689/chapter-1"
+  },
+  {
+    "id": "10",
+    "title": "Comparative Preservation Claims",
+    "subtitle": "Bible and Qur’an: distinguish evidence from authority",
+    "history": "Claims that the Bible was wholly corrupted require dates, mechanisms, and textual evidence. Compare specific passages with early Hebrew, Greek, and translation witnesses. Qur’anic preservation also has a documented history of manuscripts and canonical readings. Neither textual stability nor variation alone proves or disproves divine inspiration.",
+    "witnesses": "Dead Sea Scrolls; Greek New Testament papyri; early Qur’anic manuscripts; qirāʾāt",
+    "scripture": "Galatians 1:8–9; Hebrews 1:1–3; 1 Peter 3:15",
+    "objection": "Do not argue that the Qur’an’s variants automatically disprove its preservation or that biblical variants are always trivial.",
+    "response": "The decisive Christian claim is that the triune God has spoken in Christ and Scripture; historical evidence tests specific transmission claims.",
+    "source": "https://www.deadseascrolls.org.il/"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "01",
+    "title": "Pre-Islamic Arabia",
+    "scripture": "Deut 6:4; Acts 17:24–31",
+    "question": "Does the emergence of a monotheistic movement establish divine revelation?",
+    "islamic": "Qur’an 53:19–23; 109:1–6",
+    "history": "Distinguish late antique Arabian religious diversity from later narratives; do not assume every pre-Islamic belief is independently verified.",
+    "response": "The Creator is known through general revelation, but saving knowledge is disclosed in Christ; examine rival revelation claims without inferring their truth from historical success."
+  },
+  {
+    "id": "02",
+    "title": "Muhammad’s Life",
+    "scripture": "Deut 13:1–5; Matt 7:15–20",
+    "question": "Can a prophet be authenticated solely by later accounts of his character and success?",
+    "islamic": "Qur’an 33:21; 48:29; Ibn Hisham, Sīrah",
+    "history": "Distinguish the Qur’an, later sīrah, hadith, and non-Muslim sources; assess each event by proximity and corroboration.",
+    "response": "A biblical evaluation considers the content of claimed revelation rather than treating political success or moral accusations as decisive."
+  },
+  {
+    "id": "03",
+    "title": "Prophetic Claims",
+    "scripture": "Gal 1:6–9; 1 John 4:1–3; Heb 1:1–3",
+    "question": "Can an angelic message overturn the apostolic proclamation of Christ?",
+    "islamic": "Qur’an 2:97; 4:171; 5:72; 53:3–4",
+    "history": "Paul was not writing about Muhammad; applying his criterion to later claims is a theological inference. Distinguish hadith reports about Gabriel from Qur’anic wording.",
+    "response": "The apostolic gospel and the identity of the Son are the controlling tests for later revelation claims, under the authority of Scripture."
+  },
+  {
+    "id": "04",
+    "title": "Compilation of the Qur’an",
+    "scripture": "Isa 40:8; 1 Pet 1:24–25",
+    "question": "Does a standardized text prove every earlier recitation was identical?",
+    "islamic": "Sahih al-Bukhari 4986–4987; Qur’an 15:9",
+    "history": "Abu Bakr and Uthman compilation accounts are later literary reports; assess manuscripts, rasm, and reported companion codices separately.",
+    "response": "Textual preservation and divine inspiration are distinct questions; avoid claiming that textual variation alone disproves inspiration."
+  },
+  {
+    "id": "05",
+    "title": "Qur’anic Manuscripts",
+    "scripture": "Luke 1:1–4; 1 Cor 15:3–8",
+    "question": "What can dated manuscripts establish about the earliest text?",
+    "islamic": "Birmingham Mingana 1572a; Ṣanʿāʾ palimpsest; Parisino-petropolitanus",
+    "history": "Radiocarbon dates parchment rather than ink; distinguish orthography, meaningful variants, and reconstructable text.",
+    "response": "Compare the textual evidence for both traditions by the same standard of honesty, and show that the Qur’an’s own claims about earlier Scripture (5:46–48) cannot be sustained."
+  },
+  {
+    "id": "06",
+    "title": "Qirāʾāt and Aḥruf",
+    "scripture": "2 Tim 3:16–17; John 17:17",
+    "question": "Are accepted readings equivalent to one unchanged vocalized wording?",
+    "islamic": "Qur’an 1:4; Bukhari 4991–4992; qirāʾāt traditions",
+    "history": "Distinguish aḥruf reports, canonical qirāʾāt, rasm-compatible readings, and early codex differences.",
+    "response": "Evaluate specific preservation claims carefully; textual plurality is neither automatically corruption nor evidence of perfect identity."
+  },
+  {
+    "id": "07",
+    "title": "Hadith Reliability",
+    "scripture": "Luke 1:1–4; 1 John 1:1–3",
+    "question": "What does a ṣaḥīḥ classification establish historically?",
+    "islamic": "Bukhari introduction and isnād traditions; Muslim introduction",
+    "history": "Traditional isnād grading and modern historical authentication use different methods; later compilation does not mean late invention.",
+    "response": "The Christian case rests on apostolic witness and Scripture; critique particular hadith reports with evidence, not blanket dismissal."
+  },
+  {
+    "id": "08",
+    "title": "Qur’an and Biblical Revelation",
+    "scripture": "John 1:1–14; John 20:28; 1 Cor 15:3–8; Heb 1:8–12",
+    "question": "Can the Qur’anic denial of Christ’s crucifixion and deity be reconciled with the apostolic gospel?",
+    "islamic": "Qur’an 4:157; 4:171; 5:72–73; 112:1–4",
+    "history": "Distinguish historical evidence for crucifixion from theological interpretation of atonement; avoid claiming the Qur’an explicitly teaches a particular substitution theory.",
+    "response": "The one triune God reveals the incarnate Son, crucified and risen; compare claims at the level of ultimate authority and the earliest testimony."
+  },
+  {
+    "id": "09",
+    "title": "Presuppositional Evaluation",
+    "scripture": "Prov 1:7; Col 2:3–8; Rom 1:18–23",
+    "question": "Which account of revelation supplies the final standard for evaluating competing claims?",
+    "islamic": "Qur’an 2:2; 4:171; 5:48",
+    "history": "Identify assumptions fairly; distinguish Islamic theological schools and avoid asserting that Muslims cannot reason or know moral truths.",
+    "response": "Van Til: self-attesting triune revelation; Bavinck: organic unity of revelation; Bahnsen: worldview-level critique. Show specific tensions, not slogans."
+  }
+]

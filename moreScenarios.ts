@@ -5,9 +5,9 @@ export const moreScenarios = [
     "challenge": "“The universe exists; why add God to explain it?”",
     "options": [
       {
-        "text": "Ask whether contingent reality needs an ultimate explanation and distinguish philosophical arguments from scientific mechanisms.",
+        "text": "Show that the question assumes a rational, ordered universe, which only makes sense if the triune Creator made and upholds it (Acts 17:24–28; Hebrews 1:3).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Correct. Do not argue up to a mere first cause; show that intelligibility itself presupposes the God of Scripture."
       },
       {
         "text": "Do not claim that science has proved God mathematically.",
@@ -27,9 +27,9 @@ export const moreScenarios = [
     "challenge": "“If everything needs a cause, who created God?”",
     "options": [
       {
-        "text": "Clarify that classical arguments concern contingent or beginning-to-exist things, not an eternal necessary being.",
+        "text": "Explain that the self-existent God of Scripture is not one more caused thing. His aseity is the precondition of causation, not an exception to it (Exodus 3:14; Acts 17:25; 1689 2.2).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Right. The question treats God as a creature; Scripture reveals the Creator on whom all causes depend."
       },
       {
         "text": "Say God was created before time.",
@@ -49,9 +49,9 @@ export const moreScenarios = [
     "challenge": "“I can be moral without believing in God.”",
     "options": [
       {
-        "text": "Agree that nonbelievers can act morally; discuss the grounding of objective moral obligation separately.",
+        "text": "Agree that unbelievers act morally because God's law is written on their hearts (Romans 2:15), then show that their worldview cannot account for moral obligation.",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "This affirms what Scripture says about every person's moral knowledge while exposing that their worldview cannot ground it."
       },
       {
         "text": "Tell the person atheists cannot be kind.",
@@ -71,9 +71,9 @@ export const moreScenarios = [
     "challenge": "“No one can know whether God exists.”",
     "options": [
       {
-        "text": "Ask what standard of knowledge is being used and whether the claim itself exceeds that standard.",
+        "text": "Ask what standard of knowledge is being used and whether the claim itself exceeds that standard. Then point out that Scripture says all people already know God (Romans 1:19–21).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Good. Skepticism undermines itself, and Scripture explains why the denial is suppression, not ignorance."
       },
       {
         "text": "Claim every theological question is equally certain.",
@@ -137,9 +137,9 @@ export const moreScenarios = [
     "challenge": "“A council arbitrarily picked the Bible books.”",
     "options": [
       {
-        "text": "Explain early reception and criteria, distinguish recognition from invention, and acknowledge historical complexity.",
+        "text": "Explain that Scripture is self-attesting: the church recognized the books God inspired and did not create them (1689 1.4; John 10:27). Then answer the historical claim.",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Good. Canon is God's work; the church's role was to receive it, which the historical record confirms."
       },
       {
         "text": "Say a single council wrote all the books.",
@@ -203,9 +203,9 @@ export const moreScenarios = [
     "challenge": "“The Quran denies the crucifixion; why trust the Gospels?”",
     "options": [
       {
-        "text": "Compare the historical evidence for crucifixion with the later Quranic claim, distinguishing historical and theological questions.",
+        "text": "Show the internal problem: the Qur'an affirms the Gospel given to Jesus (5:46–47) yet denies its central event. Then present the apostolic testimony, written some six centuries before the Qur'an.",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "This is an internal critique: Islam's own book points Christians to the Gospel that refutes it."
       },
       {
         "text": "Claim there is no historical evidence beyond the Bible.",
@@ -225,9 +225,9 @@ export const moreScenarios = [
     "challenge": "“The original Gospel disappeared before Muhammad.”",
     "options": [
       {
-        "text": "Ask when, where, and how corruption allegedly occurred; compare surviving early manuscript evidence.",
+        "text": "Ask when, where and how the corruption occurred, and why the Qur'an tells Christians to judge by the Gospel (5:47) if it was already lost. Then point to manuscripts that predate Muhammad.",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Right. The claim fails on Islam's own terms and on the manuscript record God has preserved (1689 1.8)."
       },
       {
         "text": "Claim all New Testament manuscripts are identical.",
@@ -379,9 +379,9 @@ export const moreScenarios = [
     "challenge": "“Why cannot God reveal another book of Scripture?”",
     "options": [
       {
-        "text": "Separate God’s ability to reveal from the evidence and doctrinal consistency of a particular revelation claim.",
+        "text": "Test the claim by the Scripture already given: God's revelation in Christ is final (Hebrews 1:1–2; 1689 1.1), and a later revelation that contradicts it is false (Galatians 1:8).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Right. Scripture is the standard by which any new revelation claim is judged, not the reverse."
       },
       {
         "text": "Say God is unable to speak.",
@@ -445,9 +445,9 @@ export const moreScenarios = [
     "challenge": "“God made the universe but never intervenes.”",
     "options": [
       {
-        "text": "Ask what evidence would count for divine action and examine the historical claims about Jesus.",
+        "text": "Ask how a god who never speaks could be known at all, and show that the deist borrows knowledge of God that only revelation provides (Romans 1:19–20; Hebrews 1:1–2).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Good. Deism cannot account for its own knowledge of God; the God who made the world has spoken in it and in His Son."
       },
       {
         "text": "Confuse deism with atheism.",
@@ -511,9 +511,9 @@ export const moreScenarios = [
     "challenge": "“All religions lead to the same ultimate reality.”",
     "options": [
       {
-        "text": "Ask whether conflicting claims about God, salvation, and history can all be true in the same sense.",
+        "text": "Show that the claim contradicts every religion's actual teaching, and that it is itself an absolute truth claim made without any revealed standpoint. Then present Christ's exclusive claim (John 14:6).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Right. Religious pluralism is a rival worldview with its own unargued presuppositions."
       },
       {
         "text": "Assume Hinduism has only one unified doctrine.",
@@ -533,9 +533,9 @@ export const moreScenarios = [
     "challenge": "“We can ground human rights in shared humanity without religion.”",
     "options": [
       {
-        "text": "Acknowledge secular accounts of dignity and compare their foundations with the image-of-God doctrine.",
+        "text": "Show that secular accounts assume human dignity without being able to ground it, and that only creation in God's image supplies it (Genesis 1:27; 9:6).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "This credits the moral intuition and exposes that it rests on borrowed Christian capital."
       },
       {
         "text": "Say secular humanists cannot defend rights.",
@@ -555,9 +555,9 @@ export const moreScenarios = [
     "challenge": "“What is right for you need not be right for me.”",
     "options": [
       {
-        "text": "Distinguish personal preference, cultural convention, and objective moral claims; test with a concrete case.",
+        "text": "Test the claim against itself and a concrete case, and show that the person lives as though objective morality exists (Romans 2:14–15).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Good. Relativism cannot be lived consistently; the person's conscience testifies against the claim."
       },
       {
         "text": "Say every cultural difference is a moral disagreement.",
@@ -577,9 +577,9 @@ export const moreScenarios = [
     "challenge": "“The important thing is Jesus’ ethics, not doctrinal claims.”",
     "options": [
       {
-        "text": "Ask which texts are authoritative and examine Jesus’ identity and resurrection alongside his ethical teaching.",
+        "text": "Show that Jesus' ethics cannot be separated from His claims about Himself. Without His authority as Lord, His commands have no foundation (John 14:6; Matthew 7:24–29).",
         "correct": true,
-        "feedback": "Strong approach: define terms fairly, examine the relevant primary texts, and acknowledge genuine complexity."
+        "feedback": "Correct. Jesus taught with His own authority; accepting the ethics while rejecting the Lord is incoherent."
       },
       {
         "text": "Assume everyone using the label agrees.",

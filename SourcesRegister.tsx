@@ -1,0 +1,63 @@
+import {useState} from 'react';
+import {primarySources,accessLabel,statusLabel,type Access,type Status} from './primarySources';
+type Row={t:string,w:string,n?:string};
+const biblio:Record<string,Row[]>={
+'Biblical text & canon':[
+{t:'The Text of the New Testament',w:'Bruce Metzger & Bart Ehrman (4th ed., Oxford, 2005)',n:'Standard survey of NT manuscripts and criticism; read critically, since Ehrman’s conclusions are not ours.'},
+{t:'Scribes and Scrolls / The Text of the Old Testament',w:'Emanuel Tov, Textual Criticism of the Hebrew Bible (3rd ed., Fortress, 2012); Ernst Würthwein (Eerdmans)',n:'OT text history including the Dead Sea Scrolls.'},
+{t:'The Canon of Scripture',w:'F. F. Bruce (IVP, 1988); Michael Kruger, Canon Revisited (Crossway, 2012)'},
+{t:'The King James Only Controversy / Reliability of the NT',w:'James White (Bethany); Peter Williams, Can We Trust the Gospels? (Crossway, 2018)'}],
+'Reformed theology & the 1689':[
+{t:'Baptist Confession of Faith (1689)',w:'Public domain; see Samuel Waldron, A Modern Exposition of the 1689 Baptist Confession of Faith (Evangelical Press)'},
+{t:'Systematic Theology',w:'Louis Berkhof (Banner of Truth); Herman Bavinck, Reformed Dogmatics, 4 vols (Baker)'},
+{t:'Institutes of the Christian Religion',w:'John Calvin, trans. Battles (Westminster John Knox)'},
+{t:'The Doctrine of God / Scripture',w:'John Frame, The Doctrine of God and The Doctrine of the Word of God (P&R)'}],
+'Presuppositional apologetics':[
+{t:'The Defense of the Faith',w:'Cornelius Van Til (P&R, 4th ed. 2008)'},
+{t:'Always Ready',w:'Greg Bahnsen (Covenant Media, 1996)'},
+{t:'Van Til’s Apologetic: Readings & Analysis',w:'Greg Bahnsen (P&R, 1998)'},
+{t:'Apologetics to the Glory of God',w:'John Frame (P&R, 1994)'}],
+'Islam: primary sources':[
+{t:'Ṣaḥīḥ al-Bukhārī',w:'Muhammad Muhsin Khan translation (Darussalam), or Sunnah.com'},
+{t:'Tafsir al-Ṭabarī (Jāmiʿ al-bayān)',w:'al-Ṭabarī; selections in English: J. Cooper et al., The Commentary on the Qurʾān (Oxford)'},
+{t:'Tafsir Ibn Kathīr',w:'Abridged English edition (Darussalam)'},
+{t:'The Qur’an: A New Translation',w:'M. A. S. Abdel Haleem (Oxford); Pickthall (public domain, used here)'}],
+'Islam: critical scholarship':[
+{t:'The Qur’an in its Historical Context',w:'ed. Gabriel Said Reynolds (Routledge, 2008)'},
+{t:'The Qurʾān and the Bible: Text and Commentary',w:'Gabriel Said Reynolds (Yale, 2018)'},
+{t:'The History of the Qur’ānic Text',w:'M. M. al-Aʿẓamī (UK Islamic Academy, 2003): a Muslim defence of transmission; read alongside critics'},
+{t:'The Bible in Arabic / The Qurʾān and the Biblical Narratives',w:'Sidney Griffith, The Bible in Arabic (Princeton, 2013)'},
+{t:'Answering Islam',w:'Norman Geisler & Abdul Saleeb (Baker, 2nd ed. 2002)'}],
+'Judaism & rabbinic sources':[
+{t:'Babylonian Talmud (Sanhedrin, Bava Batra)',w:'Soncino English or Sefaria.org (free)'},
+{t:'Genesis Rabbah / Exodus Rabbah',w:'Midrash Rabbah, Soncino; Sefaria.org'},
+{t:'Rashi on the Torah',w:'Sefaria.org (English and Hebrew)'},
+{t:'Pirke de-Rabbi Eliezer',w:'Gerald Friedlander translation (1916, public domain)'}]};
+const named:{acct:string,muslim:string,jewish:string}[]=[
+{acct:'Adam',muslim:'Qurʾān 2:30–39; 7:11–25; 20:115–123. Tafsir al-Ṭabarī and Ibn Kathīr on these verses; Bukhārī (Book of Prophets) on Adam.',jewish:'Genesis Rabbah 8–19; Talmud Sanhedrin 38b on Adam; Rashi on Genesis 2–3.'},
+{acct:'Noah and his son',muslim:'Qurʾān 11:25–49; 71. Ṭabarī and Ibn Kathīr on 11:42–46 (the son who refused the ark).',jewish:'Genesis Rabbah 30–32; Talmud Sanhedrin 108a–b; Rashi on Genesis 6–9.'},
+{acct:'Abraham, Isaac and Ishmael',muslim:'Qurʾān 2:124–140; 14:35–41; 37:99–113 (the son is unnamed in the text). Ṭabarī records both Isaac and Ishmael views; Ibn Kathīr favours Ishmael (verify wording).',jewish:'Genesis Rabbah 55–56 (Akedah); Rashi on Genesis 22; Pirke de-Rabbi Eliezer 31.'},
+{acct:'Joseph',muslim:'Qurʾān 12 (Sūrat Yūsuf). Ṭabarī and Ibn Kathīr on Sūrat Yūsuf.',jewish:'Genesis Rabbah 84–90; Talmud Sotah 36b (Joseph and Potiphar’s wife).'},
+{acct:'Moses, Pharaoh and Haman',muslim:'Qurʾān 28:1–42; 40:23–46; 20:9–98. Ṭabarī and Ibn Kathīr on 28:6–8 (Haman).',jewish:'Exodus Rabbah 1–5; Talmud Sotah 11a–12b; Targum Pseudo-Jonathan on Exodus; Esther 3:1 for Haman, a different man and era.'},
+{acct:'The golden calf and Aaron',muslim:'Qurʾān 20:83–98 (al-Sāmirī). Ṭabarī on 20:85–97.',jewish:'Exodus Rabbah 41–43; Talmud Sanhedrin 7a; Rashi on Exodus 32.'},
+{acct:'David and Solomon',muslim:'Qurʾān 21:78–82; 27:15–44; 34:10–14; 38:17–40. Ṭabarī and Ibn Kathīr; Qiṣaṣ al-Anbiyāʾ literature (verify per work).',jewish:'Talmud Shabbat 56a (David and Bathsheba); Targum Sheni to Esther (Solomon and the queen of Sheba); Rashi on 1 Kings 10.'},
+{acct:'Mary and Jesus',muslim:'Qurʾān 3:33–63; 19:1–36; 5:110–118. Ṭabarī and Ibn Kathīr on Sūrat Maryam.',jewish:'Rabbinic polemic: Talmud Sanhedrin 43a (Yeshu; censored in some editions, verify). Toledot Yeshu is a medieval counter-narrative, not early evidence.'},
+{acct:'The crucifixion',muslim:'Qurʾān 4:157–158. Ṭabarī on 4:157 records several accounts of who was made to look like Jesus.',jewish:'Talmud Sanhedrin 43a; Josephus, Antiquities 18.3.3 (the Testimonium Flavianum, partly disputed).'}];
+const status:{c:string,s:'confirmed'|'verify'|'unconfirmed',n:string}[]=[
+{c:'Bible Hub NASB links (biblehub.com/nasb/book/c-v.htm)',s:'confirmed',n:'Checked live for John 3, John 3:16 and 1 Samuel 1:1 on 21 Nov 2026.'},
+{c:'Offline Bible text: BSB, KJV, WLC Hebrew, SBLGNT Greek',s:'confirmed',n:'Loaded from published open-licence editions; all 66 books present.'},
+{c:'Pickthall Qur’an English and Tanzil Arabic',s:'confirmed',n:'Public sources; Arabic is Tanzil Simple v1.1.'},
+{c:'Manuscript dates and holdings in the timeline',s:'verify',n:'Written from standard references; check against museum catalogues before citing.'},
+{c:'Tafsir and Hadith references on Muslim positions',s:'verify',n:'Book and surah references are given; wording of individual tafsir opinions should be checked in the work itself.'},
+{c:'Rabbinic and Jewish parallels',s:'verify',n:'Tractate and chapter references are standard; check on Sefaria.org.'},
+{c:'1689 Confession text with proof texts',s:'verify',n:'Embedded from the PDF you supplied (32 chapters, 160 paragraphs, proofs included). Spot-check against a printed edition before formal quotation.'},
+{c:'Abrogation table and the nine added doctrines',s:'verify',n:'Verse texts are exact (Pickthall and Tanzil). Scholar names, counts, classifications and hadith references come from standard works but are not checked against them.'},
+{c:'Khan Bukhari translation and Saheeh International PDF',s:'unconfirmed',n:'Check redistribution licence before keeping them on the public site.'}];
+const col={confirmed:'#2e7d32',verify:'#b26a00',unconfirmed:'#b00020'};
+export default function SourcesRegister(){const [tab,setTab]=useState<'status'|'primary'|'named'|'biblio'>('status')
+const [pq,setPq]=useState(''),[pa,setPa]=useState<'all'|Access>('all'),[pst,setPst]=useState<'all'|Status>('all');;
+return <><div className="page-head"><span className="eyebrow">SOURCE QUALITY · VERSION 3.26</span><h1>Sources &amp; Verification</h1><p>What has been checked, what still needs checking, named Muslim and Jewish sources for each account, and a reading list. Scripture stays the standard; manuscripts show preservation (1689 1.8) and do not rank above inspiration (2 Timothy 3:16).</p></div>
+<div className="panel" style={{display:'flex',gap:8,flexWrap:'wrap'}}>{([['status','Verification register'],['primary','Primary sources'],['named','Muslim & Jewish sources'],['biblio','Bibliography']] as const).map(([k,l])=><button key={k} aria-pressed={tab===k} onClick={()=>setTab(k)} style={{fontWeight:tab===k?700:400}}>{l}</button>)}</div>
+{tab==='status'&&<div className="panel">{status.map(r=><p key={r.c}><b style={{color:col[r.s]}}>{r.s.toUpperCase()}</b> · {r.c}<br/><small>{r.n}</small></p>)}</div>}
+{tab==='primary'&&<div className="panel"><input aria-label="Search primary sources" placeholder="Search sources…" value={pq} onChange={e=>setPq(e.target.value)} style={{width:'100%'}}/><div style={{display:'flex',gap:8,margin:'8px 0',flexWrap:'wrap'}}><select aria-label="Access" value={pa} onChange={e=>setPa(e.target.value as any)}><option value="all">All access</option>{(Object.keys(accessLabel) as Access[]).map(k=><option key={k} value={k}>{accessLabel[k]}</option>)}</select><select aria-label="Status" value={pst} onChange={e=>setPst(e.target.value as any)}><option value="all">All checks</option>{(Object.keys(statusLabel) as Status[]).map(k=><option key={k} value={k}>{statusLabel[k]}</option>)}</select></div>{primarySources.filter(x=>(pa==='all'||x.access===pa)&&(pst==='all'||x.status===pst)&&(!pq.trim()||(x.title+' '+x.note+' '+x.kind).toLowerCase().includes(pq.trim().toLowerCase()))).map(x=><p key={x.id}><a href={x.url} target="_blank" rel="noopener noreferrer"><b>{x.title} ↗</b></a><br/><small>{x.kind} · {accessLabel[x.access]} · {statusLabel[x.status]}<br/>{x.note}</small></p>)}<p><small>Links open in your browser and need a connection. Titles, notes and labels stay available offline.</small></p></div>}{tab==='named'&&<div className="panel"><p><small>References are to named works so you can look each up. Anything marked verify has not been checked against the text.</small></p>{named.map(r=><div key={r.acct} style={{marginBottom:12}}><h3 style={{margin:'0 0 4px'}}>{r.acct}</h3><p style={{margin:0}}><b>Muslim:</b> {r.muslim}</p><p style={{margin:0}}><b>Jewish:</b> {r.jewish}</p></div>)}</div>}
+{tab==='biblio'&&Object.entries(biblio).map(([k,rows])=><div className="panel" key={k}><h2>{k}</h2>{rows.map(r=><p key={r.t}><b>{r.t}</b> — {r.w}{r.n&&<><br/><small>{r.n}</small></>}</p>)}</div>)}</>}

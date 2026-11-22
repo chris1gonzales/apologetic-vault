@@ -2,3 +2,11 @@
 .confession-chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:9px;margin-top:20px}.confession-chapters a{display:flex;align-items:center;gap:12px;border:1px solid var(--border,#d8d8d8);border-radius:9px;padding:12px;text-decoration:none;color:inherit;font-size:14px}.confession-chapters a span{font-weight:700;color:#b08a49}.confession-chapters a svg{margin-left:auto;flex-shrink:0}.confession-chapters a:hover{border-color:#b08a49}.confession-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}.confession-compare .panel{margin:0}
 
 .source-item{padding:20px 24px;border-bottom:1px solid var(--border,#ddd);background:var(--surface,#fff)}.source-item>div{width:100%}.source-item strong{display:block;margin:8px 0}.source-actions a{display:inline-flex;align-items:center;gap:6px;font-size:.9rem}.source-note-label{display:block;margin-top:15px;font-size:.85rem}.source-note-label textarea{display:block;width:100%;margin-top:6px;min-height:55px;padding:9px;border:1px solid #c6cbd2;border-radius:6px;background:#fff;color:#18212b;box-sizing:border-box}.source-item .eyebrow{font-size:.72rem}
+
+/* Veritas Reformata wordmark */
+.brand-icon{flex-shrink:0;font-size:20px}.brand strong{display:block;font-size:14px;letter-spacing:1.4px;line-height:1.25}.brand small{font-size:8px;letter-spacing:.6px;line-height:1.4}.brand>div:nth-child(2){min-width:0}
+.hub-bar{margin:0 0 14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06)}
+.hub-title{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+.hub-tabs{display:flex;flex-wrap:wrap;gap:6px}
+.hub-tabs button{padding:6px 10px;border-radius:999px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit;font:inherit;font-size:.85rem;cursor:pointer}
+.hub-tabs button.active{background:var(--gold,#b8934a);color:#111;border-color:transparent;font-weight:600}
