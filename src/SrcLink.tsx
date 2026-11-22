@@ -1,0 +1,2 @@
+import {ps,accessLabel,statusLabel} from './primarySources';
+export default function SrcLink({ids}:{ids:string[]}){return <span className="srclinks" style={{fontSize:'.85em'}}>{ids.map(id=>{const p=ps(id);if(!p)return null;return <a key={id} href={p.url} target="_blank" rel="noopener noreferrer" title={accessLabel[p.access]+' · '+statusLabel[p.status]} style={{marginRight:8,whiteSpace:'nowrap'}}>[{p.title.split(/[(:,]/)[0].trim()} ↗ {p.access==='open'?'free':p.access==='paywall'?'paywall':'library'}]</a>})}</span>}

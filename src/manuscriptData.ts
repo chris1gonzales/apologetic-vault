@@ -140,7 +140,7 @@ export const manuscripts:Ms[]=[
 {id:'len',side:'Torah',name:'Leningrad Codex',date:'1008–1009 AD',what:'Complete Hebrew Bible; basis of modern critical editions.',note:'Public-domain text widely available online.',url:'https://www.sefaria.org/'},
 {id:'birm',side:'Qur’an',name:'Birmingham Qur’an folios (Mingana 1572a)',date:'radiocarbon 568–645 AD (reported)',what:'Two parchment leaves with parts of Q 18–20 in Hijazi script.',note:'Dating applies to the parchment, not necessarily the writing; ranges are debated.'},
 {id:'sanaa',side:'Qur’an',name:'Ṣan‘ā’ palimpsest (DAM 01-27.1)',date:'lower text radiocarbon about 578–669 AD (reported)',what:'A manuscript with an erased earlier text beneath the visible Qur’an.',note:'The lower text shows some differences in wording and order from the standard text; scholars discuss their significance.',url:'https://corpuscoranicum.de/'},
-{id:'tub',side:'Qur’an',name:'Tübingen fragment (Ma VI 165)',date:'radiocarbon about 649–675 AD (reported)',what:'An early Qur’an fragment.',note:'Among the earliest dated copies.'},
-{id:'topkapi',side:'Qur’an',name:'Topkapı and Samarkand Kufic manuscripts',date:'about 8th–9th century AD',what:'Large early codices traditionally linked to the ‘Uthmanic text.',note:'The traditional link to ‘Uthman is a tradition; palaeographic dating is later.'}
+{id:'tub',side:'Qur’an',name:'Tübingen fragment (Ma VI 165)',date:'radiocarbon about 649–675 AD (reported; verify)',what:'An early Qur’an fragment.',note:'Among the earliest dated copies.'},
+{id:'topkapi',side:'Qur’an',name:'Topkapı and Samarkand Kufic manuscripts',date:'about 8th–9th century AD (Samarkand radiocarbon 775–995 at 95.4%, another folio 595–855; Topkapı dating verify)',what:'Large early codices traditionally linked to the ‘Uthmanic text.',note:'The link to ‘Uthman is a tradition. Neither is shown to be a copy he sent; dating is a range and under discussion.'}
 ];
 

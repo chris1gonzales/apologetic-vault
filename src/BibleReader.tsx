@@ -17,7 +17,7 @@ const chapters=main?.[book]?.length||info.chapters||1;
 const verses=main?.[book]?.[ch-1]||[];const ov=og?.[book]?.[ch-1]||[];
 const hits=useMemo(()=>{const s=q.trim().toLowerCase();if(s.length<3||!main)return[];const out:{b:string,c:number,v:number,t:string}[]=[];for(const b of books){const bk=main[b.name];if(!bk)continue;bk.forEach((cv,ci)=>cv.forEach((t,vi)=>{if(out.length<60&&t.toLowerCase().includes(s))out.push({b:b.name,c:ci+1,v:vi+1,t})}))}return out},[q,main]);
 const go=(b:string,c:number)=>{setBook(b);setCh(c);setQ('')};
-return <><div className="page-head"><span className="eyebrow">OFFLINE SCRIPTURE · VERSION 3.24</span><h1>Bible Reader</h1><p>The whole Bible stored on this device: Berean Standard Bible or KJV in English, with the Hebrew (Westminster Leningrad Codex) or Greek (SBL Greek New Testament) beside it. Scripture is the highest standard of truth here; each verse links to the NASB on Bible Hub when you are online.</p></div>
+return <><div className="page-head"><span className="eyebrow">OFFLINE SCRIPTURE · VERSION 3.26</span><h1>Bible Reader</h1><p>The whole Bible stored on this device: Berean Standard Bible or KJV in English, with the Hebrew (Westminster Leningrad Codex) or Greek (SBL Greek New Testament) beside it. Scripture is the highest standard of truth here; each verse links to the NASB on Bible Hub when you are online.</p></div>
 <div className="panel"><div style={{display:'flex',gap:8,flexWrap:'wrap'}}>
 <select aria-label="Book" value={book} onChange={e=>go(e.target.value,1)}>{books.map(b=><option key={b.name}>{b.name}</option>)}</select>
 <select aria-label="Chapter" value={ch} onChange={e=>setCh(+e.target.value)}>{Array.from({length:chapters},(_,i)=><option key={i} value={i+1}>Chapter {i+1}</option>)}</select>
