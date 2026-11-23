@@ -1,0 +1,17 @@
+.side-search{display:flex;align-items:center;gap:8px;margin:0 6px 12px;padding:0 10px;background:#0e1726;border:1px solid #34435b;border-radius:9px;color:#a8b4c6}
+.side-search input{width:100%;min-width:0;padding:11px 0;background:transparent;border:0;outline:none;color:#fff;font-size:13px}
+.gs-links button{background:none;border:0;color:#d9bd83;text-decoration:underline;padding:0;font-size:12px}
+.gs-chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+.gs-chips button{background:#151f30;border:1px solid #3a4a61;color:#c7d0df;border-radius:999px;padding:7px 12px;font-size:12px}
+.gs-chips button span{color:#8f9bad;margin-left:4px}
+.gs-chips button.active{background:#d1b274;border-color:#d1b274;color:#142033;font-weight:700}
+.gs-chips button.active span{color:#142033}
+.gs-list{list-style:none;margin:10px 0 20px;padding:0;display:grid;gap:10px}
+.gs-list button{display:flex;flex-direction:column;gap:6px;width:100%;text-align:left;background:#151f30;border:1px solid #303d52;border-radius:10px;padding:14px 16px;color:#e7e9ef}
+.gs-list button:hover{border-color:#a48d5f}
+.gs-meta{display:flex;flex-wrap:wrap;gap:8px;font-size:11px;letter-spacing:.04em}
+.gs-area{color:#d9ba7a;font-weight:700}.gs-page{color:#8f9bad}
+.gs-list strong{font-size:15px;line-height:1.4}
+.gs-snip{font-size:13px;color:#a6b3c5;line-height:1.6}
+.gs mark{background:#d1b27466;color:inherit;border-radius:3px;padding:0 1px}
+.search-hit{outline:2px solid #d1b274;outline-offset:4px;border-radius:6px;transition:outline-color .3s}
