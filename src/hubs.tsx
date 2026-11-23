@@ -4,7 +4,7 @@ export const hubs:HubDef[]=[
 {id:'islam',label:'Islam & the Qur’an',pages:[['quran','Qur’anic research'],['hadith','Hadith'],['muhammadQuran','Muhammad & origins'],['christologyIslam','Deity of Christ'],['trinity4171','Qur’an 4:171'],['torahQuran','Torah & Qur’anic accounts']]},
 {id:'manuscripts',label:'Manuscripts & textual criticism',pages:[['textualCriticism','Inerrancy & the Bible’s text'],['manuscriptCriticism','OT & Qur’an manuscripts']]},
 {id:'method',label:'Apologetics method',pages:[['logicArgumentation','Logic & TAG'],['apologeticsFramework','Standards & method']]},
-{id:'other',label:'Other teachings',pages:[['wordFaith','Word of Faith & NAR'],['comparisons','Roman Catholicism, LDS & JW'],['worldviews','Comparative worldviews']]},
+{id:'other',label:'Other teachings',pages:[['wordFaith','Word of Faith & NAR'],['catholic','Roman Catholicism'],['lds','Latter-day Saints'],['jw','Jehovah’s Witnesses'],['worldviews','Comparative worldviews']]},
 {id:'libraries',label:'Libraries',pages:[['publiclibrary','Public domain'],['rts','RTS'],['drive','Drive catalog']]}];
 export const hubOf=(page:string)=>hubs.find(h=>h.pages.some(p=>p[0]===page));
 export function HubBar({hub,page,nav}:{hub:HubDef,page:string,nav:(p:any)=>void}){

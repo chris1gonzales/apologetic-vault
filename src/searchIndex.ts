@@ -19,8 +19,7 @@ import * as rtsResources from './rtsResources';
 import * as driveCatalog from './driveCatalog';
 import * as moreScenarios from './moreScenarios';
 import * as theodicyScenarios from './theodicyScenarios';
-import * as comparative from './comparativeReligions';
-import {rcRows} from './comparativeRC';
+import {allOT} from './otherTeachingsData';
 import apologeticsFramework from './apologeticsFrameworkData.json';
 import muhammadQuran from './muhammadQuranData.json';
 import textualCriticism from './textualCriticismData.json';
@@ -51,7 +50,7 @@ walk(out,logicData as never,'logicArgumentation',A(5));walk(out,logicLabData as 
 (apologeticsFramework as unknown[]).forEach((x,i)=>add(out,x,'Framework '+(i+1),'apologeticsFramework',A(5)));
 walk(out,worldviews as never,'worldviews',A(5));
 (wordFaith as unknown[]).forEach((x,i)=>add(out,x,'Word of Faith '+(i+1),'wordFaith',A(6)));
-([...(comparative.comparativeReligions as unknown as {group:string;topic:string}[]),...rcRows]).forEach(r=>add(out,r,r.topic,'comparisons',r.group==='Roman Catholicism'?A(3):A(4)));
+allOT.forEach(r=>add(out,{title:r.topic,kind:r.kind,area:r.area,teaching:r.teaching,cites:r.cites,scripture:r.scripture,response:r.response,note:r.note},r.topic,r.trad==='rc'?'catholic':r.trad,r.trad==='rc'?A(3):r.trad==='lds'?A(4):A(4)));
 walk(out,confessionsMod as never,'confessions',A(0));
 (c1689.chapters as {n:number;title:string;paras:unknown[]}[]).forEach(ch=>ch.paras.forEach((para,i)=>{const parts:string[]=[];strs(para,parts);const x=clean(parts.join(' '));if(x.length<12)return;const t='1689 '+ch.n+'.'+(i+1)+' '+ch.title;out.push({t,x,a:A(0),p:'confession1689',l:(t+' '+x).toLowerCase()})}));
 walk(out,primarySources as never,'sources',A(8));walk(out,publicLibrary as never,'publiclibrary',A(8));walk(out,rtsResources as never,'rts',A(8));

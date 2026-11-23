@@ -1,0 +1,26 @@
+.ot-tabs{display:flex;gap:6px;margin:0 0 14px}
+.ot-tabs button{flex:1;padding:10px 6px;background:#151f30;border:1px solid #3a4a61;border-radius:9px;color:#c7d0df;font-size:13px}
+.ot-tabs button.active{border:2px solid #d1b274;color:#fff;font-weight:700}
+.ot-count{color:#d9bd83;font-size:13px}
+.ot-chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.ot-chips button{background:#151f30;border:1px solid #3a4a61;color:#c7d0df;border-radius:999px;padding:7px 12px;font-size:12px}
+.ot-chips button span{color:#8f9bad;margin-left:4px}
+.ot-chips button.active{background:#d1b274;border-color:#d1b274;color:#142033;font-weight:700}
+.ot-chips button.active span{color:#142033}
+.ot-list{display:grid;gap:10px;margin:12px 0 20px}
+.ot-card{background:#151f30;border:1px solid #303d52;border-radius:12px;color:#e7e9ef}
+.ot-card summary{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;list-style:none}
+.ot-card summary::-webkit-details-marker{display:none}
+.ot-title{display:flex;flex-direction:column;gap:3px}
+.ot-title small{color:#8f9bad;font-size:11px}
+.ot-badge{font-size:11px;padding:3px 9px;border-radius:6px;white-space:nowrap;font-weight:700}
+.ot-checked{background:#173a2a;color:#8fe0b0}.ot-secondary{background:#3a3217;color:#e8cf86}.ot-verify{background:#4a2a17;color:#f0b48a}
+.ot-body{padding:0 16px 16px;border-top:1px solid #303d52}
+.ot-body h3{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#a8b4c6;margin:14px 0 4px}
+.ot-body h3 small{text-transform:none;letter-spacing:0}
+.ot-body p{line-height:1.6;margin:0}
+.ot-body a{color:#d9bd83}
+.ot-refs span{display:inline-block;margin:0 6px 6px 0;padding:3px 9px;background:#1d2b44;border-radius:6px}
+.ot-note{margin-top:10px!important;color:#c7d0df;font-size:13px}
+.ot-notes{display:block;margin-top:14px;font-size:12px;color:#a8b4c6}
+.ot-notes textarea{width:100%;margin-top:6px;background:#fff;color:#111827;border:1px solid #3a4a61;border-radius:8px;padding:8px}
