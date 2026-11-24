@@ -1,0 +1,13 @@
+.ut-badge{font-size:11px;padding:3px 9px;border-radius:6px;white-space:nowrap;font-weight:700;margin-left:6px;vertical-align:middle}
+.ut-checked{background:#173a2a;color:#8fe0b0}.ut-secondary{background:#3a3217;color:#e8cf86}.ut-verify{background:#4a2a17;color:#f0b48a}
+.ut-card{border:1px solid #2c3a52;border-radius:12px;padding:14px 16px;margin:14px 0}
+.ut-card h2,.ut-card h3{margin-top:0}
+.ut-ex{border-top:1px solid #2c3a52;padding-top:8px;margin-top:8px}
+.ut-note{opacity:.92}
+.ut-src{list-style:none;padding:0;margin:6px 0;font-size:13px}.ut-src li{margin:3px 0}
+.ut-link{background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.ut-timeline{list-style:none;padding:0 0 0 14px;border-left:2px solid #bfa66c;margin:12px 0}
+.ut-timeline>li{margin:0 0 18px;padding-left:14px}
+.ut-timeline small{color:#bfa66c;font-weight:700}
+.ut-timeline h3{margin:2px 0 6px}
+.ut-refs{padding-left:18px;margin:6px 0}

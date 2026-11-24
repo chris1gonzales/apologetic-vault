@@ -9,6 +9,7 @@ import * as tqContradictions from './tqContradictions';
 import * as quranComparisons from './quranComparisons';
 import * as manuscriptData from './manuscriptData';
 import * as textualPositions from './textualPositions';
+import * as understandingTextData from './understandingTextData';
 import * as logicData from './logicData';
 import * as logicLabData from './logicLabData';
 import * as worldviews from './worldviews';
@@ -44,7 +45,7 @@ walk(out,moreScenarios as never,'simulator',A(7));walk(out,theodicyScenarios as 
 for(const m of [tqTexts,tqExtra,tqIndex,tqAbrogation,tqDoctrine,torahQuranData,tqContradictions])walk(out,m as never,'torahQuran',A(1));
 walk(out,quranComparisons as never,'quran',A(1));
 (muhammadQuran as unknown[]).forEach((x,i)=>add(out,x,'Muhammad study '+(i+1),'muhammadQuran',A(1)));
-walk(out,manuscriptData as never,'manuscriptCriticism',A(2));walk(out,textualPositions as never,'textualCriticism',A(2));
+walk(out,manuscriptData as never,'manuscriptCriticism',A(2));walk(out,textualPositions as never,'textualCriticism',A(2));walk(out,understandingTextData as never,'understandingText',A(2));
 (textualCriticism as unknown[]).forEach((x,i)=>add(out,x,'Textual study '+(i+1),'textualCriticism',A(2)));
 walk(out,logicData as never,'logicArgumentation',A(5));walk(out,logicLabData as never,'logicArgumentation',A(5));
 (apologeticsFramework as unknown[]).forEach((x,i)=>add(out,x,'Framework '+(i+1),'apologeticsFramework',A(5)));
@@ -56,7 +57,7 @@ walk(out,confessionsMod as never,'confessions',A(0));
 walk(out,primarySources as never,'sources',A(8));walk(out,publicLibrary as never,'publiclibrary',A(8));walk(out,rtsResources as never,'rts',A(8));
 (driveCatalog.driveSources as unknown[]).forEach((x,i)=>add(out,x,'Drive source '+(i+1),'drive',A(8)));
 built=out;return out}
-export async function loadInline():Promise<Entry[]>{const m=await import('./searchInline.json');const arr=(m.default||m) as {p:string;t:string;x:string}[];const base=buildStatic();const keys=base.map(e=>e.l);const AR:Record<string,number>={christologyIslam:1,trinity4171:1,quran:1,hadith:1,torahQuran:1,manuscriptCriticism:2,textualCriticism:2,logicArgumentation:5,apologeticsFramework:5,muhammadQuran:1,wordFaith:6,sources:8,scripture:9,privacy:8,confessions:0};const out:Entry[]=[];for(const r of arr){const x=clean(r.x);if(x.length<25)continue;const probe=x.slice(0,70).toLowerCase();if(keys.some(k=>k.includes(probe)))continue;const t=clean(r.t||x.slice(0,60));out.push({t,x,a:A(AR[r.p]??9),p:r.p,l:(t+' '+x).toLowerCase()})}return out}
+export async function loadInline():Promise<Entry[]>{const m=await import('./searchInline.json');const arr=(m.default||m) as {p:string;t:string;x:string}[];const base=buildStatic();const keys=base.map(e=>e.l);const AR:Record<string,number>={christologyIslam:1,trinity4171:1,quran:1,hadith:1,torahQuran:1,manuscriptCriticism:2,understandingText:2,textualCriticism:2,logicArgumentation:5,apologeticsFramework:5,muhammadQuran:1,wordFaith:6,sources:8,scripture:9,privacy:8,confessions:0};const out:Entry[]=[];for(const r of arr){const x=clean(r.x);if(x.length<25)continue;const probe=x.slice(0,70).toLowerCase();if(keys.some(k=>k.includes(probe)))continue;const t=clean(r.t||x.slice(0,60));out.push({t,x,a:A(AR[r.p]??9),p:r.p,l:(t+' '+x).toLowerCase()})}return out}
 export async function loadQuran():Promise<Entry[]>{const r=await fetch('/corpus/pickthall.json');if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json() as string[][];const out:Entry[]=[];d.forEach((s,i)=>s.forEach((v,j)=>{const t='Qur’an '+(i+1)+':'+(j+1)+' (Pickthall)';out.push({t,x:v,a:A(1),p:'quran',l:(t+' '+v).toLowerCase()})}));return out}
 export type Hit={e:Entry;score:number};
 export function tokens(q:string){return q.toLowerCase().split(/[^\p{L}\p{N}’']+/u).filter(w=>w.length>1||/\d/.test(w))}
