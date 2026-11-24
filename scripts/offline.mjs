@@ -1,6 +1,6 @@
 import {readdir,readFile,writeFile,stat} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-async function walk(dir){const out=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=dir+'/'+e.name;if(e.isDirectory())out.push(...await walk(p));else if(!['sw.js','_headers'].includes(e.name))out.push(p)}return out}
+async function walk(dir){const out=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=dir+'/'+e.name;if(e.isDirectory())out.push(...await walk(p));else if(!['sw.js','_headers','_redirects'].includes(e.name))out.push(p)}return out}
 const files=(await walk('dist')).sort();const hash=createHash('sha256');for(const f of files){hash.update(f);hash.update(await readFile(f))}
 const cache='vr-offline-'+hash.digest('hex').slice(0,20);
 const core=[],large=[];for(const f of files){const p='/'+f.slice(5);((await stat(f)).size>2e6?large:core).push(p)}
