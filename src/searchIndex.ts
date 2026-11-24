@@ -15,6 +15,7 @@ import * as logicLabData from './logicLabData';
 import * as worldviews from './worldviews';
 import * as confessionsMod from './confessions';
 import * as primarySources from './primarySources';
+import * as historyData from './historyData';
 import * as publicLibrary from './publicLibrary';
 import * as rtsResources from './rtsResources';
 import * as driveCatalog from './driveCatalog';
@@ -54,6 +55,7 @@ walk(out,worldviews as never,'worldviews',A(5));
 allOT.forEach(r=>add(out,{title:r.topic,kind:r.kind,area:r.area,teaching:r.teaching,cites:r.cites,scripture:r.scripture,response:r.response,note:r.note},r.topic,r.trad==='rc'?'catholic':r.trad,r.trad==='rc'?A(3):r.trad==='lds'?A(4):A(4)));
 walk(out,confessionsMod as never,'confessions',A(0));
 (c1689.chapters as {n:number;title:string;paras:unknown[]}[]).forEach(ch=>ch.paras.forEach((para,i)=>{const parts:string[]=[];strs(para,parts);const x=clean(parts.join(' '));if(x.length<12)return;const t='1689 '+ch.n+'.'+(i+1)+' '+ch.title;out.push({t,x,a:A(0),p:'confession1689',l:(t+' '+x).toLowerCase()})}));
+(historyData.councils as unknown[]).forEach((x,i)=>add(out,x,'Council '+(i+1),'churchHistory',A(0)));(historyData.events as unknown[]).forEach((x,i)=>add(out,x,'Heresy '+(i+1),'churchHistory',A(0)));(historyData.baptist as unknown[]).forEach((x,i)=>add(out,x,'Baptist history '+(i+1),'baptistLine',A(0)));
 walk(out,primarySources as never,'sources',A(8));walk(out,publicLibrary as never,'publiclibrary',A(8));walk(out,rtsResources as never,'rts',A(8));
 (driveCatalog.driveSources as unknown[]).forEach((x,i)=>add(out,x,'Drive source '+(i+1),'drive',A(8)));
 built=out;return out}

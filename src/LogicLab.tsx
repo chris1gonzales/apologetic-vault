@@ -16,7 +16,7 @@ return <div className="vl-article vl-wide">
 <h2>Worked conversations</h2><p>Short examples of the method in a courteous, Scripture-grounded style (1 Peter 3:15).</p>
 {dialogues.map(d=><div key={d.id} className="vl-dialogue"><h3>{d.title}</h3>{d.lines.map((l,i)=><p key={i} className={'vl-line vl-'+l.who.toLowerCase()}><strong>{l.who==='Note'?'Method':l.who}:</strong> <Txt t={l.text}/></p>)}</div>)}
 <h2>Glossary</h2>
-<div className="searchbar"><input aria-label="Search glossary" value={q} onChange={e=>setQ(e.target.value)} placeholder="Search terms, meanings, examples…"/></div>
+<div className="searchbar"><input name="search-glossary-1" autoComplete="off" aria-label="Search glossary" value={q} onChange={e=>setQ(e.target.value)} placeholder="Search terms, meanings, examples…"/></div>
 <div className="vl-tabs" role="group" aria-label="Glossary group">{groups.map(g=><button key={g} className={g===group?'active':''} onClick={()=>setGroup(g)}>{g}</button>)}</div>
 <div className="vl-glossary">{list.map(g=><div key={g.term} className="vl-term"><strong>{g.term}</strong><span className="vl-pill">{g.group}</span><p>{g.meaning}</p><p className="vl-eg"><em>Example:</em> {g.example}</p></div>)}{!list.length&&<p className="empty">No matching terms.</p>}</div>
 </div>}

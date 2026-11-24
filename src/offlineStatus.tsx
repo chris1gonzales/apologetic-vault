@@ -1,5 +1,5 @@
 import {useEffect,useState} from 'react';
-type St={ready:boolean,done:number,total:number};
+type St={ready:boolean,done:number,total:number,busy?:boolean,missing?:string[]};
 export default function OfflineStatus(){
 const [online,setOnline]=useState(navigator.onLine),[status,setStatus]=useState('Preparing offline files…'),[waiting,setWaiting]=useState<ServiceWorker|null>(null),[hidden,setHidden]=useState(false),[ready,setReady]=useState(false),[help,setHelp]=useState(false),[mini,setMini]=useState(false);
 useEffect(()=>{
@@ -8,7 +8,7 @@ let disposed=false;const miniT=window.setTimeout(()=>!disposed&&setMini(true),80
 const ask=(msg:string)=>new Promise<St|null>(res=>{const w=reg?.active;if(!w){res(null);return}const ch=new MessageChannel();const t=window.setTimeout(()=>res(null),8000);ch.port1.onmessage=e=>{clearTimeout(t);res(e.data);ch.port1.close()};w.postMessage(msg,[ch.port2])});
 const poll=async()=>{if(disposed)return;tries++;const r=await ask(tries%4===1?'VR_FETCH':'VR_STATUS');if(disposed)return;
 if(r?.ready){setReady(true);setStatus('Offline research ready');window.setTimeout(()=>!disposed&&setHidden(true),3000);return}
-if(r)setStatus(`Saving offline files… ${r.done}/${r.total}`);
+if(r)setStatus(`Saving offline files… ${r.done}/${r.total}`+(r.missing?.length&&!r.busy&&tries>4?' (not saved: '+r.missing.map(x=>x.split('/').pop()).join(', ')+')':''));else if(tries>=3)setStatus('Waiting for the offline worker… if this stays, reload the page');
 if(tries>150){setStatus('Offline files incomplete — stay online and reload');return}
 timer=window.setTimeout(poll,2500)};
 const inspect=()=>{if(disposed)return;setWaiting(reg?.waiting||null)};

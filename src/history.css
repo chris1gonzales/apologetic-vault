@@ -1,0 +1,11 @@
+.ch-points{list-style:none;padding:0;margin:8px 0}
+.ch-points>li{margin:0 0 12px;line-height:1.55}
+.ch-n{opacity:.85}
+.ch-meta{margin:6px 0}
+.ch-card>summary{cursor:pointer;list-style:none}
+.ch-card>summary h2{display:inline;margin:0}
+.ch-card>summary::-webkit-details-marker{display:none}
+.ch-card>summary::after{content:' ▾';opacity:.6}
+.ch-card[open]>summary::after{content:' ▴'}
+.ch-legend p{margin:8px 0}
+.ch-legend .ut-badge{margin:0 6px 0 0}

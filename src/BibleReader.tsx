@@ -19,11 +19,11 @@ const hits=useMemo(()=>{const s=q.trim().toLowerCase();if(s.length<3||!main)retu
 const go=(b:string,c:number)=>{setBook(b);setCh(c);setQ('')};
 return <><div className="page-head"><span className="eyebrow">OFFLINE SCRIPTURE · VERSION 3.26</span><h1>Bible Reader</h1><p>The whole Bible stored on this device: Berean Standard Bible or KJV in English, with the Hebrew (Westminster Leningrad Codex) or Greek (SBL Greek New Testament) beside it. Scripture is the highest standard of truth here; each verse links to the NASB on Bible Hub when you are online.</p></div>
 <div className="panel"><div style={{display:'flex',gap:8,flexWrap:'wrap'}}>
-<select aria-label="Book" value={book} onChange={e=>go(e.target.value,1)}>{books.map(b=><option key={b.name}>{b.name}</option>)}</select>
-<select aria-label="Chapter" value={ch} onChange={e=>setCh(+e.target.value)}>{Array.from({length:chapters},(_,i)=><option key={i} value={i+1}>Chapter {i+1}</option>)}</select>
-<select aria-label="English text" value={tr} onChange={e=>setTr(e.target.value as any)}><option value="bsb">BSB (English)</option><option value="kjv">KJV (English)</option></select>
-<label style={{display:'flex',alignItems:'center',gap:4}}><input type="checkbox" checked={orig} onChange={e=>setOrig(e.target.checked)}/>{isNT?'Greek':'Hebrew'}</label></div>
-<input aria-label="Search the English text" placeholder="Search the whole Bible (3+ letters)…" value={q} onChange={e=>setQ(e.target.value)} style={{marginTop:8,width:'100%'}}/>
+<select name="book-1" aria-label="Book" value={book} onChange={e=>go(e.target.value,1)}>{books.map(b=><option key={b.name}>{b.name}</option>)}</select>
+<select name="chapter-2" aria-label="Chapter" value={ch} onChange={e=>setCh(+e.target.value)}>{Array.from({length:chapters},(_,i)=><option key={i} value={i+1}>Chapter {i+1}</option>)}</select>
+<select name="english-text-3" aria-label="English text" value={tr} onChange={e=>setTr(e.target.value as any)}><option value="bsb">BSB (English)</option><option value="kjv">KJV (English)</option></select>
+<label style={{display:'flex',alignItems:'center',gap:4}}><input name="checkbox-4" type="checkbox" checked={orig} onChange={e=>setOrig(e.target.checked)}/>{isNT?'Greek':'Hebrew'}</label></div>
+<input name="search-the-english-text-5" autoComplete="off" aria-label="Search the English text" placeholder="Search the whole Bible (3+ letters)…" value={q} onChange={e=>setQ(e.target.value)} style={{marginTop:8,width:'100%'}}/>
 <div style={{display:'flex',gap:8,marginTop:8,flexWrap:'wrap'}}><button disabled={ch<=1} onClick={()=>setCh(ch-1)}>‹ Prev</button><button disabled={ch>=chapters} onClick={()=>setCh(ch+1)}>Next ›</button><a href={bibleHubUrl(`${book} ${ch}`)||'#'} target="_blank" rel="noopener noreferrer">Read {book} {ch} in the NASB on Bible Hub ↗</a></div></div>
 {err&&<div className="panel">Could not load text: {err}. Open the app once online so the text can be stored.</div>}
 {q.trim().length>=3?<div className="panel"><h2>{hits.length>=60?'First 60 matches':hits.length+' matches'}</h2>{hits.map(h=><p key={h.b+h.c+h.v}><a href="#" onClick={e=>{e.preventDefault();go(h.b,h.c)}}><b>{h.b} {h.c}:{h.v}</b></a> {h.t}</p>)}</div>:
