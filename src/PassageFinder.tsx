@@ -5,7 +5,6 @@ const cache:{[k:string]:any}={};
 async function getJson(k:string,url:string){if(cache[k])return cache[k];const r=await fetch(url);if(!r.ok)throw Error('HTTP '+r.status);return cache[k]=await r.json()}
 async function getText(k:string,url:string){if(cache[k])return cache[k];const r=await fetch(url);if(!r.ok)throw Error('HTTP '+r.status);return cache[k]=await r.text()}
 const NTSTART=39;
-const EX=['John 3:16-21','Genesis 1:1–2:3','Psalm 22–24','Romans 8','Q 2:255-260','Surah 18:9–26','Q 112'];
 function Box({n,start}:{n:number,start:string}){
 const [q,setQ]=useState(start),[tr,setTr]=useState<'bsb'|'kjv'>('bsb'),[orig,setOrig]=useState(true),[res,setRes]=useState<Found|null>(null),[busy,setBusy]=useState(false),[err,setErr]=useState(''),[copied,setCopied]=useState(false);
 const run=useRef(0);
@@ -31,7 +30,6 @@ return <div className="pf-box"><h2 style={{marginTop:0}}>Passage {n}</h2>
 <form className="pf-row" onSubmit={e=>{e.preventDefault();find()}}>
 <input type="search" name={'passage-'+n} aria-label={'Passage '+n+' reference'} autoComplete="off" placeholder="e.g. John 3:16-21 or Q 2:255-260" value={q} onChange={e=>setQ(e.target.value)}/>
 <button type="submit">Find</button></form>
-<div className="pf-chips">{EX.map(x=><button key={x} type="button" className="pf-chip" onClick={()=>{setQ(x);find(x)}}>{x}</button>)}</div>
 <div className="pf-row"><select name={'translation-'+n} aria-label="English text" value={tr} onChange={e=>setTr(e.target.value as any)}><option value="bsb">BSB (English)</option><option value="kjv">KJV (English)</option></select>
 <label style={{display:'flex',alignItems:'center',gap:4}}><input type="checkbox" name={'original-'+n} checked={orig} onChange={e=>setOrig(e.target.checked)}/>Hebrew, Greek or Arabic</label></div>
 <p className="pf-note">Qur’an English is Pickthall. Start Qur’an references with Q or Surah.</p>
@@ -46,7 +44,7 @@ return <div className="pf-box"><h2 style={{marginTop:0}}>Passage {n}</h2>
 </div>}
 export default function PassageFinder(){
 const [two,setTwo]=useState(false);
-return <><div className="page-head"><span className="eyebrow">OFFLINE SCRIPTURE · VERSION 3.34</span><h1>Find a passage</h1><p>Type a Bible or Qur’an reference or range and read it straight away, with the original language beside it. Bible: <b>Gen 1:1–2:3</b>, <b>John 3:16-21</b>, <b>Psalm 22–24</b>, <b>Romans 8</b>. Qur’an: <b>Q 2:255-260</b>, <b>Surah 18:9–26</b>, <b>Q 112</b>. Everything is stored on this device, so it works offline. Scripture is the highest standard; the Qur’an text is shown so it can be tested by Scripture (Isaiah 8:20; Galatians 1:8).</p></div>
+return <><div className="page-head"><span className="eyebrow">OFFLINE SCRIPTURE · VERSION 3.34.1</span><h1>Find a passage</h1><p>Type a Bible or Qur’an reference or range and read it straight away, with the original language beside it. Bible: <b>Gen 1:1–2:3</b>, <b>John 3:16-21</b>, <b>Psalm 22–24</b>, <b>Romans 8</b>. Qur’an: <b>Q 2:255-260</b>, <b>Surah 18:9–26</b>, <b>Q 112</b>. Everything is stored on this device, so it works offline. Scripture is the highest standard; the Qur’an text is shown so it can be tested by Scripture (Isaiah 8:20; Galatians 1:8).</p></div>
 <div className="pf-grid"><Box n={1} start=""/>{two&&<Box n={2} start=""/>}</div>
 <div className="pf-row">{!two?<button type="button" onClick={()=>setTwo(true)}>＋ Compare with a second passage</button>:<button type="button" onClick={()=>setTwo(false)}>Remove the second passage</button>}</div>
 <div className="panel"><h2>Texts and licensing</h2><p>BSB and KJV are public domain. Hebrew: Open Scriptures Hebrew Bible (WLC), CC BY 4.0. Greek: SBL Greek New Testament, CC BY 4.0. Qur’an English: Pickthall. The NASB is linked to Bible Hub, not stored.</p></div></>}
