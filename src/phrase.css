@@ -1,0 +1,23 @@
+.ph-page{min-width:0}
+.ph-tabs{display:flex;gap:6px;margin:10px 0 12px}
+.ph-tabs button{flex:1 1 0;padding:10px 12px;border:1px solid #2c3a52;background:none;color:inherit;border-radius:10px;font-weight:600;cursor:pointer}
+.ph-tabs button.active{border-color:#bfa66c;background:#bfa66c22}
+.ph-form{display:flex;gap:8px;margin:6px 0}
+.ph-form input{flex:1 1 auto;min-width:0}
+.ph-chips{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.ph-opts{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin:8px 0}
+.ph-opts label{display:flex;flex-direction:column;gap:3px;font-size:12px;min-width:0}
+.ph-opts select{max-width:100%}
+.ph-opts label.ph-check{flex-direction:row;align-items:center;gap:6px;flex:1 1 100%}
+.ph-sum{margin:10px 0 4px}
+.ph-row{margin:4px 0 8px}
+.ph-list{display:flex;flex-direction:column;gap:10px;margin:8px 0}
+.ph-card{border:1px solid #2c3a52;border-radius:12px;padding:10px 12px;min-width:0}
+.ph-card header{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:4px}
+.ph-card header a{font-size:12px;white-space:nowrap}
+.ph-card p{margin:4px 0;overflow-wrap:anywhere}
+.ph-ctx{opacity:.72}
+.ph-main sup,.ph-ctx sup{font-size:10px;margin-right:3px;opacity:.7}
+mark.ph-hit{background:#bfa66c55;color:inherit;border-radius:3px;padding:0 1px}
+.ph-note{margin-top:18px}
+@media (max-width:520px){.ph-opts label{flex:1 1 44%}.ph-opts select{width:100%}}
