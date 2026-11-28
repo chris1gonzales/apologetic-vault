@@ -1,0 +1,2 @@
+# v3.52
+Sources honesty pass. Each source on the I AM and NT method pages now says what was actually read. Quarles and Metzger entries point to the publisher sample and the WorldCat record. Corrections on the I AM page: Hamblin (distinguishes predicate from predicate-less sayings; read an installment), Seleznev (argues the Septuagint rendering was a translation choice), Watchtower note and Vasileiadis wording. Manuscript count wording updated.
