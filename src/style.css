@@ -24,3 +24,12 @@
 .menu-group.has-current>.menu-head{color:#c9a96a}
 .menu-items{display:flex;flex-direction:column;margin:0 0 6px 14px;padding-left:8px;border-left:1px solid #243044}
 .menu-link{font-size:14px;padding:8px 10px}
+
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:0 0 14px;font-size:13px;color:#8d9ab0}
+.crumbs ol{display:flex;flex-wrap:wrap;align-items:center;gap:2px;margin:0;padding:0;list-style:none}
+.crumbs li{display:flex;align-items:center;gap:2px}
+.crumbs button{background:transparent;border:0;padding:3px 4px;color:#b8c1d0;font:inherit;cursor:pointer;border-radius:5px}
+.crumbs button:hover{color:#c9a96a;text-decoration:underline}
+.crumbs span{padding:3px 4px;color:#e7e9ef}
+.crumbs .crumb-back{border:1px solid #c9a96a;color:#c9a96a;padding:5px 10px;border-radius:8px;font-weight:600}
+@media print{.crumbs{display:none!important}}

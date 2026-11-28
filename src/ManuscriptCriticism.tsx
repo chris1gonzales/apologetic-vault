@@ -1,4 +1,4 @@
-import Transmission from './Transmission';
+import{useUrlTab}from'./urlState';import Transmission from './Transmission';
 import {useEffect,useState} from 'react';
 import {banner,manuscripts,otCases,otWitnesses,otMethod,quranSections,quranQuestions,sideBySide,links,editions,caseEditions,quranEditions,type Ed} from './manuscriptData';
 import {Txt} from './LogicLab';
@@ -7,7 +7,7 @@ const KEY='veritas-manuscript-criticism-notes-v1';
 type Tab='timeline'|'transmission'|'ot'|'quran'|'compare'|'editions'|'sources';
 const edList=(l:Ed[]|undefined)=>l&&l.length>0?<div className="vl-caution"><strong>Critical editions and images for this study</strong><ul>{l.map(e=><li key={e.id}><a href={e.url} target="_blank" rel="noopener noreferrer">{e.name} ↗</a> <span className="vl-pill">{e.access}</span><br/><small>{e.note}</small></li>)}</ul><small>These are landing pages for the edition or collection, not links to the exact verse or leaf. Look up the passage once there.</small></div>:null;
 export default function ManuscriptCriticism({onOpen}:{onOpen?:(p:any)=>void}){
-const[tab,setTab]=useState<Tab>('timeline');const[side,setSide]=useState<'All'|'Torah'|'Qur’an'>('All');const[cid,setCid]=useState(otCases[0].id);const[qid,setQid]=useState(quranSections[0].id);
+const[tab,setTab]=useUrlTab<Tab>('timeline',['timeline','transmission','ot','quran','compare','editions','sources']);const[side,setSide]=useState<'All'|'Torah'|'Qur’an'>('All');const[cid,setCid]=useState(otCases[0].id);const[qid,setQid]=useState(quranSections[0].id);
 const[notes,setNotes]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}});
 useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(notes))}catch{}},[notes]);
 const c=otCases.find(x=>x.id===cid)||otCases[0];const q=quranSections.find(x=>x.id===qid)||quranSections[0];

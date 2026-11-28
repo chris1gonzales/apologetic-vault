@@ -1,11 +1,11 @@
-import {useEffect,useMemo,useState} from 'react';
+import{useUrlTab}from'./urlState';import {useEffect,useMemo,useState} from 'react';
 import data from './textualCriticismData.json';
 import './textualCriticism.css';
 import {banner,timeline,positions,common,silent,questions} from './textualPositions';
 const key='veritas-textual-criticism-v34';
 function load():Record<string,string>{try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}
 export default function TextualCriticism(){
- const [search,setSearch]=useState('');const [selected,setSelected]=useState('01');const [notes,setNotes]=useState<Record<string,string>>(load);const [tab,setTab]=useState<'studies'|'history'|'positions'|'method'|'sources'>('studies');
+ const [search,setSearch]=useState('');const [selected,setSelected]=useState('01');const [notes,setNotes]=useState<Record<string,string>>(load);const [tab,setTab]=useUrlTab<'studies'|'history'|'positions'|'method'|'sources'>('studies',['studies','history','positions','method','sources']);
  useEffect(()=>{try{localStorage.setItem(key,JSON.stringify(notes))}catch{}},[notes]);
  const matches=useMemo(()=>data.filter(d=>Object.values(d).join(' ').toLowerCase().includes(search.toLowerCase())),[search]);
  const active=data.find(d=>d.id===selected)||data[0];

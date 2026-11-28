@@ -1,4 +1,4 @@
-import {useEffect,useState} from 'react';
+import{useUrlTab}from'./urlState';import {useEffect,useState} from 'react';
 import {standard,accounts,method} from './torahQuranData';
 import SrcLink from './SrcLink';
 import {Txt} from './LogicLab';
@@ -16,7 +16,7 @@ const all:Full[]=[...accounts.map(a=>({...a,...baseMeta[a.id]})),...extra];
 type Tab='standard'|'accounts'|'parallels'|'doctrines'|'qscripture'|'cases'|'method';
 export function StandardBanner({compact}:{compact?:boolean}){return <div className="vl-callout"><strong>Scripture is the highest and unmoving standard</strong><p>{compact?'The Confession is a subordinate standard; it must always align with, and be corrected by, Scripture.':standard.lead}</p></div>}
 export default function TorahQuran({onOpen}:{onOpen?:(p:any)=>void}={}){
-const[hint]=useState(()=>takeHint());const[tab,setTab]=useState<Tab>((hint?.tab as Tab)||'standard');const[acc,setAcc]=useState(hint?.acc&&all.some(a=>a.id===hint.acc)?hint.acc:all[0].id);const[grp,setGrp]=useState<'All'|Group>('All');
+const[hint]=useState(()=>takeHint());const[tab,setTab]=useUrlTab<Tab>('standard',['standard','accounts','parallels','doctrines','qscripture','cases','method'],hint?.tab as Tab|undefined);const[acc,setAcc]=useState(hint?.acc&&all.some(a=>a.id===hint.acc)?hint.acc:all[0].id);const[grp,setGrp]=useState<'All'|Group>('All');
 const caseOf:Record<string,string>={crucifixion:'crucifixion',mary:'mary',isaac:'ibrahim'};const[notes,setNotes]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}});
 useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(notes))}catch{}},[notes]);
 const a=all.find(x=>x.id===acc)||all[0];const shown=all.filter(x=>grp==='All'||x.group===grp);const tx=tqTexts[a.id];

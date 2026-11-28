@@ -1,4 +1,4 @@
-import {useEffect,useMemo,useState} from 'react';
+import{useUrlTab}from'./urlState';import {useEffect,useMemo,useState} from 'react';
 import {fallacies,laws,inferenceRules,reasoningTypes,tagSections,tagFormalization,exercises,sources,type FallacyCategory} from './logicData';
 import './logicArgumentation.css';
 import {LogicStart,LogicInduction,LogicLevels} from './LogicLab';
@@ -8,7 +8,7 @@ function initialNotes():Record<string,string>{try{const data=JSON.parse(localSto
 function exportFile(data:unknown,filename:string){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;a.click();window.setTimeout(()=>URL.revokeObjectURL(url),1000)}
 const categories=['All','Formal','Informal','Relevance','Causal','Language'] as const;
 export default function LogicArgumentation(){
- const[tab,setTab]=useState<Tab>('start');
+ const[tab,setTab]=useUrlTab<Tab>('start',['start','induction','levels','fallacies','laws','tag','practice','sources']);
  const[query,setQuery]=useState('');
  const[category,setCategory]=useState<(typeof categories)[number]>('All');
  const[activeFallacy,setActiveFallacy]=useState(fallacies[0].id);

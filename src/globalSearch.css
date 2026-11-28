@@ -15,3 +15,12 @@
 .gs-snip{font-size:13px;color:#a6b3c5;line-height:1.6}
 .gs mark{background:#d1b27466;color:inherit;border-radius:3px;padding:0 1px}
 .search-hit{outline:2px solid #d1b274;outline-offset:4px;border-radius:6px;transition:outline-color .3s}
+.gs-viewbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:6px 0}
+.gs-view{display:inline-flex;border:1px solid var(--line,#33415a);border-radius:999px;overflow:hidden}
+.gs-view button{background:transparent;border:0;color:inherit;padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer;min-height:36px}
+.gs-view button.active{background:var(--gold,#c9a84c);color:#111}
+.gs-group{margin:18px 0 8px}
+.gs-group-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:1rem;margin:0 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line,#33415a)}
+.gs-group-h small{font-weight:400;opacity:.7;font-size:.8rem}
+.gs-more{margin-top:6px}
+@media print{.gs-view{display:none}}

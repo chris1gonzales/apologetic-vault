@@ -1,0 +1,11 @@
+.rpt{max-width:1200px;margin:0 auto}.rpt-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.rpt-tabs button,.rpt-links button{border:1px solid var(--line,#33415a);background:transparent;color:inherit;border-radius:999px;padding:8px 14px;font:inherit;cursor:pointer;min-height:40px}.rpt-tabs button.active,.rpt-links button.active{background:var(--gold,#c9a84c);color:#111}
+.rpt-layout{display:grid;grid-template-columns:260px 1fr;gap:16px}.rpt-links{display:flex;flex-direction:column;gap:6px;margin-top:8px}.rpt-links button{text-align:left;border-radius:10px}
+.rpt-sub{opacity:.8}.rpt-badge{display:inline-block;font-size:.72rem;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle}.rpt-checked{background:#173a2a;color:#8fe0b0}.rpt-secondary{background:#3a3217;color:#e8cf86}.rpt-verify{background:#4a2a17;color:#f0b48a}
+.rpt-refs,.rpt-sources{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.rpt-refs a,.rpt-refs span,.rpt-sources a{border:1px solid var(--line,#33415a);border-radius:999px;padding:6px 12px;font-size:.88rem;text-decoration:none;color:inherit}.rpt-sources a{border-radius:10px}
+.rpt-rows>div{border-top:1px solid var(--line,#33415a);padding:8px 0}.rpt-trow{border-top:1px solid var(--line,#33415a);padding:10px 0}.rpt-gr{font-size:1.05rem;margin:4px 0}.rpt-he{font-size:1.1rem;margin:4px 0;text-align:right}.rpt-note{font-size:.82rem;opacity:.75}
+@media(max-width:800px){.rpt-layout{grid-template-columns:1fr}.rpt-links{max-height:240px;overflow:auto}}
+@media print{.rpt-tabs{display:none}}
+.rpt-differ{border-left:3px solid var(--gold,#c9a84c);padding:6px 12px;margin:12px 0;background:rgba(201,168,76,.08)}.rpt-var{border-top:1px solid var(--line,#33415a);padding:8px 0}
+.rpt-src{display:flex;flex-direction:column;gap:2px}.rpt-src small{opacity:.75;padding:0 4px}
+.rpt-index{display:flex;flex-direction:column;gap:6px}.rpt-index button{text-align:left;border:1px solid var(--line,#33415a);border-radius:8px;padding:8px 10px;background:transparent;color:inherit}.rpt-index button.active{border-color:var(--gold,#c9a84c)}.rpt-layout{display:grid;grid-template-columns:240px 1fr;gap:16px}.rpt-pass{border-top:1px solid var(--line,#33415a);padding:10px 0}.rpt-gr{font-size:1.05rem}
+@media(max-width:800px){.rpt-layout{grid-template-columns:1fr}}

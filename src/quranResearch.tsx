@@ -1,4 +1,4 @@
-import {useEffect,useMemo,useState} from 'react';
+import{useUrlTab}from'./urlState';import {useEffect,useMemo,useState} from 'react';
 import {Search,Download,BookOpen} from 'lucide-react';
 import './quranResearch.css';
 type Verse={id:string;arabic:string;translation:string};
@@ -23,7 +23,7 @@ const findings:Finding[]=[
 ];
 const normalize=(s:string)=>s.normalize('NFKD').replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ـ/g,'').toLowerCase();
 function download(name:string,data:unknown){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();URL.revokeObjectURL(a.href)}
-export default function QuranResearch({onOpen}:{onOpen?:(p:any)=>void}={}){const [tab,setTab]=useState('Cross-reference');const [query,setQuery]=useState('');const [category,setCategory]=useState('All');const [corpus,setCorpus]=useState<Verse[]>([]);const [status,setStatus]=useState('Loading bundled Tanzil Simple v1.1 Arabic corpus…');const [englishVerses,setEnglishVerses]=useState<Record<string,string>>({});const [englishStatus,setEnglishStatus]=useState('Loading English Pickthall translation…');const [selected,setSelected]=useState('adam');const [notes,setNotes]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('veritas-quran-notes')||'{}')}catch{return {}}});const [minWords,setMinWords]=useState(4);const [showArabic,setShowArabic]=useState(false);
+export default function QuranResearch({onOpen}:{onOpen?:(p:any)=>void}={}){const [tab,setTab]=useUrlTab<string>('Cross-reference',['Cross-reference','Methodology','Research findings','Source library']);const [query,setQuery]=useState('');const [category,setCategory]=useState('All');const [corpus,setCorpus]=useState<Verse[]>([]);const [status,setStatus]=useState('Loading bundled Tanzil Simple v1.1 Arabic corpus…');const [englishVerses,setEnglishVerses]=useState<Record<string,string>>({});const [englishStatus,setEnglishStatus]=useState('Loading English Pickthall translation…');const [selected,setSelected]=useState('adam');const [notes,setNotes]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem('veritas-quran-notes')||'{}')}catch{return {}}});const [minWords,setMinWords]=useState(4);const [showArabic,setShowArabic]=useState(false);
 useEffect(()=>{let mounted=true;
   const key='veritas-pickthall-6236-v1';
   const parse=(data:unknown):Record<string,string>=>{
