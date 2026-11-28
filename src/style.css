@@ -10,3 +10,17 @@
 .hub-tabs{display:flex;flex-wrap:wrap;gap:6px}
 .hub-tabs button{padding:6px 10px;border-radius:999px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit;font:inherit;font-size:.85rem;cursor:pointer}
 .hub-tabs button.active{background:var(--gold,#b8934a);color:#111;border-color:transparent;font-weight:600}
+
+.top-search{display:flex;align-items:center;gap:7px;flex:1;max-width:320px;margin:0 14px;padding:0 10px;height:36px;border:1px solid #2f3d55;border-radius:9px;background:#101827;color:#8d9ab0}
+.top-search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:#e7e9ef;font:inherit;font-size:14px;letter-spacing:0}
+.top-search:focus-within{border-color:#c9a96a}
+.topbar>span:first-of-type{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+@media(max-width:700px){.topbar .version{display:none}.top-search{max-width:none;margin:0 0 0 4px}.topbar>span:first-of-type{display:none}.topbar{gap:8px!important}}
+@media print{.top-search{display:none!important}}
+
+.side-menu{display:flex;flex-direction:column;gap:2px;margin-top:6px}
+.menu-head{display:flex;align-items:center;gap:8px;width:100%;padding:10px 12px;background:transparent;border:0;border-radius:8px;color:#b8c1d0;font:inherit;font-size:13px;font-weight:600;letter-spacing:.04em;text-align:left;cursor:pointer}
+.menu-head:hover{background:rgba(255,255,255,.05)}
+.menu-group.has-current>.menu-head{color:#c9a96a}
+.menu-items{display:flex;flex-direction:column;margin:0 0 6px 14px;padding-left:8px;border-left:1px solid #243044}
+.menu-link{font-size:14px;padding:8px 10px}

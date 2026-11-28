@@ -1,4 +1,4 @@
-export const banner='Scripture is inspired by God and is the ultimate, unmoving standard by its own testimony (2 Timothy 3:16; 1689 1.5). The Confession is a subordinate standard that must align with Scripture. Manuscripts and editions are tools for the text; they do not rank above it.';
+export const banner='Scripture is inspired by God and is the ultimate, unmoving standard by its own testimony (2 Timothy 3:16; 1689 1.4). The Confession is a subordinate standard that must align with Scripture. Manuscripts and editions are tools for the text; they do not rank above it.';
 export const timeline:{era:string,title:string,body:string}[]=[
 {era:'2nd–5th century',title:'Early church scholars',body:'Origen compared Hebrew and Greek texts side by side in his Hexapla. Jerome revised the Latin Bible from the Hebrew. They knew copies differed and worked to establish the best text.'},
 {era:'6th–10th century',title:'The Masoretes',body:'Jewish scribes copied the Hebrew text with great care and added vowel and accent marks to fix its reading. Their work is the basis of the Aleppo and Leningrad Codices.'},

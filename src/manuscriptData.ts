@@ -1,4 +1,4 @@
-export const banner='Scripture is inspired by God and is the ultimate, unmoving standard of truth by its own testimony (2 Timothy 3:16; 1689 1.5). The Confession is subordinate to it. Manuscripts show how texts were transmitted; they do not rank above Scripture, and they do not make a text inspired. Every other text, including the Qur’an, is measured by Scripture.';
+export const banner='Scripture is inspired by God and is the ultimate, unmoving standard of truth by its own testimony (2 Timothy 3:16; 1689 1.4). The Confession is subordinate to it. Manuscripts show how texts were transmitted; they do not rank above Scripture, and they do not make a text inspired. Every other text, including the Qur’an, is measured by Scripture.';
 export type Case={id:string,ref:string,title:string,variant:string,witnesses:string,evidence:string,views:string[],doctrine:string,verify:string};
 export const otCases:Case[]=[
 {id:'deut',ref:'Deuteronomy 32:8',title:'“Sons of Israel” or “sons of God”?',
@@ -43,7 +43,7 @@ export const otWitnesses:[string,string,string][]=[
 ['Septuagint (LXX)','Greek translation, begun in the 3rd century BC for the Torah. Manuscripts include Vaticanus and Sinaiticus (4th century AD).','Sometimes reflects a different Hebrew text.'],
 ['Samaritan Pentateuch','The Torah as kept by the Samaritans.','Thousands of small differences from the MT, most minor.'],
 ['Peshitta, Vulgate, Targums','Syriac, Latin and Aramaic translations from the early centuries AD.','Useful for checking how the Hebrew was read.']];
-export const otMethod=['Start from Scripture as the ultimate standard (Isaiah 8:20; 1689 1.1, 1.5).','Identify the variant and each witness, with its date, language and nature (copy or translation).','Prefer the reading that best explains the others; weigh age, spread and the habits of scribes.','Remember that a translation (such as the Septuagint) is a witness to a Hebrew text, not itself the Hebrew.','Check whether any doctrine depends on the reading; usually none does.','Record the variant and your reasons; avoid saying a manuscript “proves” more than it shows.'];
+export const otMethod=['Start from Scripture as the ultimate standard (Isaiah 8:20; 1689 1.1, 1.4).','Identify the variant and each witness, with its date, language and nature (copy or translation).','Prefer the reading that best explains the others; weigh age, spread and the habits of scribes.','Remember that a translation (such as the Septuagint) is a witness to a Hebrew text, not itself the Hebrew.','Check whether any doctrine depends on the reading; usually none does.','Record the variant and your reasons; avoid saying a manuscript “proves” more than it shows.'];
 export type Qsec={id:string,title:string,body:string[]};
 export const quranSections:Qsec[]=[
 {id:'account',title:'The Islamic account of the text',body:[

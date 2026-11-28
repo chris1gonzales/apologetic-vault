@@ -1,0 +1,23 @@
+.st-toc{display:grid;gap:10px;margin:10px 0 14px}
+.st-toc strong{display:block;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;opacity:.75;margin-bottom:4px}
+.st-toc button{display:block;width:100%;text-align:left;padding:8px 10px;margin:0 0 4px;border:1px solid rgba(128,128,128,.35);border-radius:8px;background:transparent;color:inherit;font:inherit;cursor:pointer;line-height:1.35}
+.st-toc button.active{border-color:#bfa66c;background:#bfa66c22}
+.st-toc button.done{opacity:.8}
+.st-lesson h3{margin:16px 0 6px}.st-lesson h4{margin:10px 0 4px;opacity:.8}
+.st-passage{padding:10px 12px;border-left:3px solid #bfa66c;background:#bfa66c14;margin:8px 0}
+.st-refs{list-style:none;padding:0;margin:0}.st-refs li{margin:0 0 8px;line-height:1.5}
+.st-qs{padding-left:20px}.st-qs li{margin:0 0 12px}.st-qs summary{cursor:pointer;opacity:.85}
+.st-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.st-ctl{display:grid;gap:8px;margin-bottom:12px}.st-ctl label{display:grid;gap:3px;font-size:.85rem}.st-ctl select{padding:8px;font:inherit;max-width:100%}
+.st-card{border:1px solid rgba(128,128,128,.4);border-radius:10px;padding:14px;margin:8px 0}
+.st-front{font-size:1.15rem;font-weight:600;margin:10px 0}.st-back{margin:10px 0;padding:10px;background:#bfa66c1c;border-radius:8px}
+.st-note{margin:10px 0;line-height:1.6}
+.st-note-box{width:100%;box-sizing:border-box;padding:8px;font:inherit;border-radius:8px;border:1px solid rgba(128,128,128,.4);background:transparent;color:inherit}
+.st-opt{font-weight:400;color:inherit;font-size:.95rem;display:block;padding:8px 10px;margin:4px 0;border:1px solid rgba(128,128,128,.35);border-radius:8px;cursor:pointer;line-height:1.4}
+.st-opt input{margin-right:6px}.st-picked{border-color:#bfa66c;background:#bfa66c22}
+.st-right{border-color:#2e7d32;background:#2e7d3222}.st-wrong{border-color:#c62828;background:#c6282822}
+.st-why{margin:4px 0 0}.st-due{display:block;margin:4px 0}
+@media print{.sidebar,.topbar,.hub-bar,.no-print,.va-tabs{display:none!important}.st-print{break-inside:avoid-page;border:none;box-shadow:none}.st-module{padding:0}body{background:#fff;color:#000}}
+
+.st-how{margin:10px 0;padding-top:8px;border-top:1px solid rgba(128,128,128,.25);line-height:1.5}
+.st-note summary{cursor:pointer}

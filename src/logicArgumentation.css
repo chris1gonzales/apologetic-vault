@@ -22,3 +22,7 @@
 .tq-body{padding:10px 12px}
 .tq-text.scroll{max-height:320px;overflow:auto}
 .tq-text b{font-size:.75em;vertical-align:super;opacity:.7;margin-right:1px}
+
+.vl-nav .vl-theme{margin:14px 0 6px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#c9a96a}
+.vl-nav .vl-theme:first-child{margin-top:0}
+@media(max-width:700px){.vl-nav{max-height:320px;overflow-y:auto}.vl-nav button{width:100%;text-align:left}}

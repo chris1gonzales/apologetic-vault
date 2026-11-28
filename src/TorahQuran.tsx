@@ -6,7 +6,7 @@ import {extra,baseMeta,groups,groupNote,kindLabel,type Full,type Group} from './
 import {tqTexts} from './tqTexts';
 import ParallelIndex from './TorahParallels';
 import ContraCards,{ContraIndex,countFor} from './ContraCards';
-import Cases,{CaseMore} from './TorahCases';
+import Cases,{CaseMore,takeHint} from './TorahCases';
 import {abVerses,abTable,abTypes,abViews,abPressure,doctrines2} from './tqAbrogation';
 import {doctrines,qOnScripture,qPressure,qAccuse,qMuslim} from './tqDoctrine';
 import './logicArgumentation.css';
@@ -16,7 +16,7 @@ const all:Full[]=[...accounts.map(a=>({...a,...baseMeta[a.id]})),...extra];
 type Tab='standard'|'accounts'|'parallels'|'doctrines'|'qscripture'|'cases'|'method';
 export function StandardBanner({compact}:{compact?:boolean}){return <div className="vl-callout"><strong>Scripture is the highest and unmoving standard</strong><p>{compact?'The Confession is a subordinate standard; it must always align with, and be corrected by, Scripture.':standard.lead}</p></div>}
 export default function TorahQuran({onOpen}:{onOpen?:(p:any)=>void}={}){
-const[tab,setTab]=useState<Tab>('standard');const[acc,setAcc]=useState(all[0].id);const[grp,setGrp]=useState<'All'|Group>('All');
+const[hint]=useState(()=>takeHint());const[tab,setTab]=useState<Tab>((hint?.tab as Tab)||'standard');const[acc,setAcc]=useState(hint?.acc&&all.some(a=>a.id===hint.acc)?hint.acc:all[0].id);const[grp,setGrp]=useState<'All'|Group>('All');
 const caseOf:Record<string,string>={crucifixion:'crucifixion',mary:'mary',isaac:'ibrahim'};const[notes,setNotes]=useState<Record<string,string>>(()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}});
 useEffect(()=>{try{localStorage.setItem(KEY,JSON.stringify(notes))}catch{}},[notes]);
 const a=all.find(x=>x.id===acc)||all[0];const shown=all.filter(x=>grp==='All'||x.group===grp);const tx=tqTexts[a.id];
@@ -36,6 +36,6 @@ return <section className="vl-module"><div className="page-head"><span className
 <h2>Other Qur’anic doctrines</h2><p>Each entry gives the Qur’anic text, the Muslim positions, the biblical teaching and the pressure point.</p>{doctrines2.map(d=><div key={d.topic} className="vl-term"><strong>{d.topic}</strong><p><em>Qur’an:</em> {d.quran}</p><p><em>Muslim positions:</em> {d.muslim}</p><p><em>Bible:</em> <Txt t={d.bible}/></p><div className="vl-caution"><strong>Pressure point.</strong> <Txt t={d.pressure}/></div></div>)}
 <h2>Major theological differences</h2><p>Each row sets the Torah teaching beside the Qur’an and then the Reformed reading, which is measured by all of Scripture and by the 1689 Confession only as it agrees with Scripture.</p>{doctrines.map(d=><div key={d.topic} className="vl-term"><strong>{d.topic}</strong><p><em>Torah:</em> <Txt t={d.torah}/></p><p><em>Qur’an:</em> {d.quran}</p><div className="vl-caution"><strong>Reformed reading.</strong> <Txt t={d.reformed}/></div></div>)}</div>}
 {tab==='qscripture'&&<div className="vl-article vl-wide"><h2>What the Qur’an says about earlier Scripture</h2><p>These passages matter for the question of whether the Torah was corrupted. Verse wording is Pickthall (1930); check the stored Qur’an text on the parallels tab for each.</p>{qOnScripture.map(x=><div key={x.ref} className="vl-term"><strong>{x.ref}</strong>{x.note&&<span className="vl-pill">pressure point</span>}<p>{x.says}</p></div>)}<h3>Verses that accuse some people of distortion (taḥrīf)</h3>{qAccuse.map(([r,x])=><div key={r} className="vl-term"><strong>{r}</strong><p>{x}</p></div>)}<h3>The Muslim positions</h3><p>{qMuslim}</p><div className="vl-caution"><strong>The pressure point.</strong> {qPressure}</div><CaseMore id="scripture"/>{onOpen&&<p><button className="secondary" onClick={()=>onOpen('manuscriptCriticism')}>See the manuscript evidence</button></p>}</div>}
-{tab==='cases'&&<div className="vl-article vl-wide"><h2>More case studies</h2><p>Case studies moved here from Qur’anic Research. The crucifixion, Mary, Abraham’s son and earlier Scripture are now part of their accounts above and on the Qur’an on Scripture tab, with your saved notes.</p><Cases onOpen={onOpen}/></div>}
+{tab==='cases'&&<div className="vl-article vl-wide"><h2>More case studies</h2><p>All the comparison studies are here, grouped by theme (28 of the 32; the other four are inside their accounts). Case studies moved here from Qur’anic Research. The crucifixion, Mary, Abraham’s son and earlier Scripture are now part of their accounts above and on the Qur’an on Scripture tab, with your saved notes.</p><Cases onOpen={onOpen} initial={hint?.id}/></div>}
 {tab==='method'&&<div className="vl-article vl-wide"><h2>Method</h2><ol>{method.map((m,i)=><li key={i}><Txt t={m}/></li>)}</ol><p>For manuscript images, critical editions and source links, see Manuscripts & textual criticism.</p>{onOpen&&<button className="secondary" onClick={()=>onOpen('manuscriptCriticism')}>Open OT & Qur’an manuscripts</button>}</div>}
 </section>}
